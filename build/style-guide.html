@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Личный кабинет</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="js/vendor/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/vendor/datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="js/vendor/jquery-filestyle/jquery-filestyle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="wrapper">
+          <div class="header-left">
+            <div class="header__logo"></div>
+            <div class="header__desc">Югорская региональная<br>электросетевая компания</div>
+          </div>
+          <div class="header-right">Горачая линия: <span>8 3467 <b>31 85 95</b></span></div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="wrapper">
+          <div class="block">
+            <button class="button" type="button">Button</button><a class="button" href="#">Link</a>
+            <button class="button" type="button" disabled>Disabled</button>
+          </div>
+          <div class="block">
+            <div class="form-control">
+              <input class="form__input" type="text" id="input-1" value="Ваааувауааа">
+              <label class="form__label" for="input-1">Input Default</label>
+            </div>
+            <div class="form-control">
+              <input class="form__input" type="text" id="input-2" value="Ваааувауааа" disabled>
+              <label class="form__label" for="input-2">Input Disabled</label>
+            </div>
+            <div class="form-control">
+              <input class="form__input err" type="text" id="input-3" value="Ваааувауааа">
+              <label class="form__label" for="input-3">Input Error</label><span>Неверно указан e-mail</span>
+            </div>
+          </div>
+          <div class="block">
+            <div class="form-control">
+              <select class="form__select js-select" id="select-1">
+                <option value="1">Москва</option>
+                <option value="2">Санкт-Петербург</option>
+                <option value="3">Екатеринбург</option>
+                <option value="4">Омск</option>
+              </select>
+              <label class="form__label" for="select-1">Select Default</label>
+            </div>
+            <div class="form-control">
+              <select class="form__select js-select" id="select-2" disabled>
+                <option value="1">Москва</option>
+                <option value="2">Санкт-Петербург</option>
+                <option value="3">Екатеринбург</option>
+                <option value="4">Омск</option>
+              </select>
+              <label class="form__label" for="select-2">Select Disabled</label>
+            </div>
+          </div>
+          <div class="block">
+            <div class="form-control">
+              <div class="form-control">
+                <div class="form-count">
+                  <button class="form-count__button js-count" type="button" data-action="minus"></button>
+                  <input class="form-count__input" type="text" value="1" id="count" readonly>
+                  <button class="form-count__button js-count" type="button" data-action="plus"></button>
+                </div>
+                <label class="form__label" for="count">Count Default</label>
+              </div>
+              <div class="form-control">
+                <div class="form-count disabled">
+                  <button class="form-count__button js-count" type="button" data-action="minus" disabled></button>
+                  <input class="form-count__input" type="text" value="1" id="count2" readonly>
+                  <button class="form-count__button js-count" type="button" data-action="plus" disabled></button>
+                </div>
+                <label class="form__label" for="count2">Count Disabled</label>
+              </div>
+            </div>
+            <div class="form-control">
+              <input class="form__input" type="radio" name="radio" id="radio-1">
+              <label class="form__label" for="radio-1">Radio Default</label>
+              <input class="form__input" type="radio" name="radio" id="radio-2" checked>
+              <label class="form__label" for="radio-2">Radio Selected</label>
+              <input class="form__input" type="radio" name="radio" id="radio-3" disabled>
+              <label class="form__label" for="radio-3">Radio Disabled</label>
+            </div>
+            <div class="form-control">
+              <input class="form__input" type="checkbox" name="check" id="check-1">
+              <label class="form__label" for="check-1">Checkbox Default</label>
+              <input class="form__input" type="checkbox" name="check" id="check-2" checked>
+              <label class="form__label" for="check-2">Checkbox Selected</label>
+              <input class="form__input" type="checkbox" name="check" id="check-3" disabled>
+              <label class="form__label" for="check-3">Checkbox Disabled</label>
+            </div>
+          </div>
+          <div class="block">
+            <div class="form-control">
+              <input class="form__input calendar js-calendar" type="text" id="date-1" readonly>
+              <label class="form__label" for="date-1">Calendar Default</label><i class="calendar-icon"></i>
+            </div>
+            <div class="form-control">
+              <input class="form__input calendar show js-calendar" type="text" id="date-2" readonly>
+              <label class="form__label" for="date-2">Calendar Show</label><i class="calendar-icon"></i>
+            </div>
+          </div>
+          <div class="block">
+            <div class="form-control">
+              <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+              <input class="form__input js-file" type="file" id="file-1">
+              <label class="form__label" for="file-1">File Default</label><span>Размер файла не более 10 МБ</span>
+            </div><br><br>
+            <div class="form-control">
+              <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+              <input class="form__input js-file" type="file" id="file-2" disabled>
+              <label class="form__label" for="file-1">File Disabled</label><span>Размер файла не более 10 МБ</span>
+            </div>
+          </div>
+          <div class="block">
+            <div class="detail">
+              <h1 class="h1">Заявление №000001 h1</h1>
+              <p>
+                Сверхновая вертикально растягивает объект. Излучение переворачивает вихревой
+                электрон. Излучение перпендикулярно.
+              </p>
+              <p>
+                Еще в ранних работах Л.Д.Ландау показано, что осциллятор трансформирует магнит.
+                Зеркало случайно. При облучении инфракрасным лазером пульсар пространственно
+                ускоряет кварк. Силовое поле гомогенно ускоряет атом. Кварк отражает
+                термодинамический фронт. Магнит стабилизирует разрыв.
+                
+              </p>
+              <h2 class="h2">Заявление h2</h2>
+              <p>
+                Сверхновая вертикально растягивает объект. Излучение переворачивает вихревой
+                электрон. Излучение перпендикулярно.
+              </p>
+              <p>
+                Еще в ранних работах Л.Д.Ландау показано, что осциллятор трансформирует магнит.
+                Зеркало случайно. При облучении инфракрасным лазером пульсар пространственно
+                ускоряет кварк. Силовое поле гомогенно ускоряет атом. Кварк отражает
+                термодинамический фронт. Магнит стабилизирует разрыв.
+                
+              </p>
+              <h3 class="h3">Статусы заявления h3</h3>
+              <p>
+                Сверхновая вертикально растягивает объект. Излучение переворачивает вихревой
+                электрон. Излучение перпендикулярно.
+              </p>
+              <p>
+                Еще в ранних работах Л.Д.Ландау показано, что <a href="#">осциллятор трансформирует магнит</a>.
+                Зеркало случайно. При облучении инфракрасным лазером пульсар пространственно
+                ускоряет кварк. Силовое поле гомогенно ускоряет атом. Кварк отражает
+                термодинамический фронт. Магнит стабилизирует разрыв.
+                
+              </p>
+              <h4 class="h4">Сверхновая h4</h4>
+              <p>
+                Сверхновая вертикально растягивает объект. Излучение переворачивает вихревой
+                электрон. Излучение перпендикулярно.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/vendor/datepicker/datepicker.min.js"></script>
+    <script src="js/vendor/jquery-filestyle/jquery-filestyle.min.js"></script>
+    <script src="js/app/main.js"></script>
+  </body>
+</html>

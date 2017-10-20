@@ -1,0 +1,138 @@
+extends layout
+
+block content
+
+  .page
+    header.header
+      .wrapper
+        .header-left
+          .header__logo
+          .header__desc Югорская региональная<br>электросетевая компания
+        .header-right Горачая линия: <span>8 3467 <b>31 85 95</b></span>
+
+    main.main
+      .wrapper
+
+        .block
+          button(type="button").button Button
+          a(href="#").button Link
+          button(type="button", disabled).button Disabled
+
+        .block
+          .form-control
+            input(type="text", id="input-1", value="Ваааувауааа").form__input
+            label(for="input-1").form__label Input Default
+          .form-control
+            input(type="text", id="input-2", value="Ваааувауааа", disabled).form__input
+            label(for="input-2").form__label Input Disabled
+          .form-control
+            input(type="text", id="input-3", value="Ваааувауааа").form__input.err
+            label(for="input-3").form__label Input Error
+            span Неверно указан e-mail
+
+        .block
+          .form-control
+            select(id="select-1").form__select.js-select
+              option(value="1") Москва
+              option(value="2") Санкт-Петербург
+              option(value="3") Екатеринбург
+              option(value="4") Омск
+            label(for="select-1").form__label Select Default
+          .form-control
+            select(id="select-2", disabled).form__select.js-select
+              option(value="1") Москва
+              option(value="2") Санкт-Петербург
+              option(value="3") Екатеринбург
+              option(value="4") Омск
+            label(for="select-2").form__label Select Disabled
+
+        .block
+          .form-control
+            .form-control
+              .form-count
+                button(type="button", data-action="minus").form-count__button.js-count
+                input(type="text", value="1", id="count", readonly).form-count__input
+                button(type="button", data-action="plus").form-count__button.js-count
+              label(for="count").form__label Count Default
+            .form-control
+              .form-count.disabled
+                button(type="button", data-action="minus", disabled).form-count__button.js-count
+                input(type="text", value="1", id="count2", readonly).form-count__input
+                button(type="button", data-action="plus", disabled).form-count__button.js-count
+              label(for="count2").form__label Count Disabled
+          .form-control
+            input(type="radio", name="radio", id="radio-1").form__input
+            label(for="radio-1").form__label Radio Default
+            input(type="radio", name="radio", id="radio-2", checked).form__input
+            label(for="radio-2").form__label Radio Selected
+            input(type="radio", name="radio", id="radio-3", disabled).form__input
+            label(for="radio-3").form__label Radio Disabled
+          .form-control
+            input(type="checkbox", name="check", id="check-1").form__input
+            label(for="check-1").form__label Checkbox Default
+            input(type="checkbox", name="check", id="check-2", checked).form__input
+            label(for="check-2").form__label Checkbox Selected
+            input(type="checkbox", name="check", id="check-3", disabled).form__input
+            label(for="check-3").form__label Checkbox Disabled
+
+        .block
+          .form-control
+            input(type="text", id="date-1", readonly).form__input.calendar.js-calendar
+            label(for="date-1").form__label Calendar Default
+            i.calendar-icon
+          .form-control
+            input(type="text", id="date-2", readonly).form__input.calendar.show.js-calendar
+            label(for="date-2").form__label Calendar Show
+            i.calendar-icon
+
+        .block
+          .form-control
+            input(type="hidden", name="MAX_FILE_SIZE", value="10485760")
+            input(type="file", id="file-1").form__input.js-file
+            label(for="file-1").form__label File Default
+            span Размер файла не более 10 МБ
+          br
+          br
+          .form-control
+            input(type="hidden", name="MAX_FILE_SIZE", value="10485760")
+            input(type="file", id="file-2", disabled).form__input.js-file
+            label(for="file-1").form__label File Disabled
+            span Размер файла не более 10 МБ
+
+        .block
+          .detail
+            h1.h1 Заявление №000001 h1
+            p.
+              Сверхновая вертикально растягивает объект. Излучение переворачивает вихревой
+              электрон. Излучение перпендикулярно.
+            p.
+              Еще в ранних работах Л.Д.Ландау показано, что осциллятор трансформирует магнит.
+              Зеркало случайно. При облучении инфракрасным лазером пульсар пространственно
+              ускоряет кварк. Силовое поле гомогенно ускоряет атом. Кварк отражает
+              термодинамический фронт. Магнит стабилизирует разрыв.
+
+            h2.h2 Заявление h2
+            p.
+              Сверхновая вертикально растягивает объект. Излучение переворачивает вихревой
+              электрон. Излучение перпендикулярно.
+            p.
+              Еще в ранних работах Л.Д.Ландау показано, что осциллятор трансформирует магнит.
+              Зеркало случайно. При облучении инфракрасным лазером пульсар пространственно
+              ускоряет кварк. Силовое поле гомогенно ускоряет атом. Кварк отражает
+              термодинамический фронт. Магнит стабилизирует разрыв.
+
+            h3.h3 Статусы заявления h3
+            p.
+              Сверхновая вертикально растягивает объект. Излучение переворачивает вихревой
+              электрон. Излучение перпендикулярно.
+            p.
+              Еще в ранних работах Л.Д.Ландау показано, что <a href="#">осциллятор трансформирует магнит</a>.
+              Зеркало случайно. При облучении инфракрасным лазером пульсар пространственно
+              ускоряет кварк. Силовое поле гомогенно ускоряет атом. Кварк отражает
+              термодинамический фронт. Магнит стабилизирует разрыв.
+
+            h4.h4 Сверхновая h4
+            p.
+              Сверхновая вертикально растягивает объект. Излучение переворачивает вихревой
+              электрон. Излучение перпендикулярно.
+

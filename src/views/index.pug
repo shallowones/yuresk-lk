@@ -1,12 +1,18 @@
 extends layout
 
 block content
-  h1 Hi!
-  main
-    div
-      h2 SVG image
-      img(src="./images/github.svg", width="128")
-    hr
-    div
-      h2 PNG image
-      img(src="./images/github.png", width="128")
+
+  -
+    var pages = [
+      {
+        label: 'Стайлгайд',
+        name: 'style-guide'
+      }
+    ]
+
+  main.index-menu
+    h3 Список страниц в проекте
+    ol
+      each page in pages
+        li
+          a(href= page.name + '.html')= page.label
