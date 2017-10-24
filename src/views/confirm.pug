@@ -1,0 +1,42 @@
+extends layout
+
+block content
+
+  .page
+    header.header
+      .wrapper
+        .header-left
+          .header__logo
+          .header__desc Югорская региональная<br>электросетевая компания
+        .header-middle Горячая линия: <span>8 3467 <b>31 85 95</b></span>
+        //.header-right
+          .header__links
+            a(href="#") Авторизоваться
+            span.delimiter |
+            a(href="#") Зарегистрироваться
+            br
+            a(href="#") Вернуться на сайт
+        .header-right Здравствуйте, Константин
+          .header__links
+            a(href="#") Вернуться на сайт
+            span.delimiter |
+            a(href="#") Выйти из аккаунта
+
+    main.main
+      .wrapper
+        h1.h1 Введите пароль для аккаунта
+        p Вы подтвердили e-mail <b>yuresk@email.com</b>
+        .info Пароль должен содержать не менее 6 символов
+
+        .form-control
+          input(type="text", id="pass-1", value="123456").form__input.valid
+          label(for="pass-1").form__label Придумайте пароль
+        br
+        br
+        .form-control
+          input(type="text", id="pass-2", value="123").form__input.err
+          label(for="pass-2").form__label Подтверждение пароля
+        br
+        br
+        button.button Сохранить пароль
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Личный кабинет</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="js/vendor/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/vendor/datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="js/vendor/jquery-filestyle/jquery-filestyle.min.css">
+    <link rel="stylesheet" href="js/vendor/swiper/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="wrapper">
+          <div class="header-left">
+            <div class="header__logo"></div>
+            <div class="header__desc">Югорская региональная<br>электросетевая компания</div>
+          </div>
+          <div class="header-middle">Горячая линия: <span>8 3467 <b>31 85 95</b></span></div>
+          <!--.header-right
+          .header__links
+            a(href="#") Авторизоваться
+            span.delimiter |
+            a(href="#") Зарегистрироваться
+            br
+            a(href="#") Вернуться на сайт
+          -->
+          <div class="header-right">Здравствуйте, Константин
+            <div class="header__links"><a href="#">Вернуться на сайт</a><span class="delimiter">|</span><a href="#">Выйти из аккаунта</a></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="wrapper">
+          <h1 class="h1">Авторизация</h1>
+          <div class="auth">
+            <div class="auth-block">
+              <div class="form-control">
+                <input class="form__input" type="text" id="login">
+                <label class="form__label" for="login">Логин</label>
+              </div>
+              <div class="form-control">
+                <input class="form__input" type="password" id="pass">
+                <label class="form__label" for="pass">Пароль</label>
+              </div>
+              <button class="button">Авторизоваться</button>
+              <div class="form-control"><a class="link" href="#">Забыли пароль?</a><span class="delimiter">/</span><a class="link" href="#">Зарегистрироваться</a></div>
+            </div>
+            <div class="auth-line"></div>
+            <div class="auth-block"><a class="button" href="#">Войти через ЕСИА</a><a class="button" href="#">Авторизация с помощью электронной подписи</a></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/vendor/datepicker/datepicker.min.js"></script>
+    <script src="js/vendor/jquery-filestyle/jquery-filestyle.min.js"></script>
+    <script src="js/vendor/swiper/swiper.min.js"></script>
+    <script src="js/app/main.js"></script>
+  </body>
+</html>

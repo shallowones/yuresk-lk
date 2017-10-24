@@ -8,7 +8,19 @@ block content
         .header-left
           .header__logo
           .header__desc Югорская региональная<br>электросетевая компания
-        .header-right Горачая линия: <span>8 3467 <b>31 85 95</b></span>
+        .header-middle Горячая линия: <span>8 3467 <b>31 85 95</b></span>
+        //.header-right
+          .header__links
+            a(href="#") Авторизоваться
+            span.delimiter |
+            a(href="#") Зарегистрироваться
+            br
+            a(href="#") Вернуться на сайт
+        .header-right Здравствуйте, Константин
+          .header__links
+            a(href="#") Вернуться на сайт
+            span.delimiter |
+            a(href="#") Выйти из аккаунта
 
     main.main
       .wrapper
@@ -61,19 +73,25 @@ block content
                 button(type="button", data-action="plus", disabled).form-count__button.js-count
               label(for="count2").form__label Count Disabled
           .form-control
-            input(type="radio", name="radio", id="radio-1").form__input
-            label(for="radio-1").form__label Radio Default
-            input(type="radio", name="radio", id="radio-2", checked).form__input
-            label(for="radio-2").form__label Radio Selected
-            input(type="radio", name="radio", id="radio-3", disabled).form__input
-            label(for="radio-3").form__label Radio Disabled
+            .form-line
+              input(type="radio", name="radio", id="radio-1").form__input
+              label(for="radio-1").form__label Radio Default
+            .form-line
+              input(type="radio", name="radio", id="radio-2", checked).form__input
+              label(for="radio-2").form__label Radio Selected
+            .form-line
+              input(type="radio", name="radio", id="radio-3", disabled).form__input
+              label(for="radio-3").form__label Radio Disabled
           .form-control
-            input(type="checkbox", name="check", id="check-1").form__input
-            label(for="check-1").form__label Checkbox Default
-            input(type="checkbox", name="check", id="check-2", checked).form__input
-            label(for="check-2").form__label Checkbox Selected
-            input(type="checkbox", name="check", id="check-3", disabled).form__input
-            label(for="check-3").form__label Checkbox Disabled
+            .form-line
+              input(type="checkbox", name="check", id="check-1").form__input
+              label(for="check-1").form__label Checkbox Default
+            .form-line
+              input(type="checkbox", name="check", id="check-2", checked).form__input
+              label(for="check-2").form__label Checkbox Selected
+            .form-line
+              input(type="checkbox", name="check", id="check-3", disabled).form__input
+              label(for="check-3").form__label Checkbox Disabled
 
         .block
           .form-control

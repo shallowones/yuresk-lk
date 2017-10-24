@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Личный кабинет</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="js/vendor/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/vendor/datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="js/vendor/jquery-filestyle/jquery-filestyle.min.css">
+    <link rel="stylesheet" href="js/vendor/swiper/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="wrapper">
+          <div class="header-left">
+            <div class="header__logo"></div>
+            <div class="header__desc">Югорская региональная<br>электросетевая компания</div>
+          </div>
+          <div class="header-middle">Горячая линия: <span>8 3467 <b>31 85 95</b></span></div>
+          <!--.header-right
+          .header__links
+            a(href="#") Авторизоваться
+            span.delimiter |
+            a(href="#") Зарегистрироваться
+            br
+            a(href="#") Вернуться на сайт
+          -->
+          <div class="header-right">Здравствуйте, Константин
+            <div class="header__links"><a href="#">Вернуться на сайт</a><span class="delimiter">|</span><a href="#">Выйти из аккаунта</a></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="notice js-notice">
+          Для подачи заявления на техприсоединение необходимо пройти <a href="#">верификацию аккаунта</a><i class="close"></i></div>
+        <div class="wrapper">
+          <h1 class="h1">Список заявлений</h1>
+        </div>
+        <div class="tabs">
+          <div class="wrapper">
+            <button class="tabs__item js-tab active" type="button" data-target="#all">Все</button>
+            <button class="tabs__item js-tab" type="button" data-target="#completed">Завершенные</button>
+          </div>
+        </div>
+        <div class="side wrapper">
+          <div class="side-left">
+            <div class="display-none js-target show" id="all">
+              <div class="line head">
+                <div class="line__item">№</div>
+                <div class="line__item">Наименование</div>
+                <div class="line__item">Текущий статус</div>
+              </div>
+              <div class="line">
+                <div class="line__item">№00001</div>
+                <div class="line__item">Заявка на Увеличение мощности от 27.07.2017</div>
+                <div class="line__item">Принята в обработку</div>
+              </div>
+              <div class="line">
+                <div class="line__item">№00005</div>
+                <div class="line__item">Заявка на Увеличение мощности от 20.07.2017</div>
+                <div class="line__item">Ожидание подписания договора</div>
+              </div>
+              <div class="line">
+                <div class="line__item">№00009</div>
+                <div class="line__item">Заявка на Увеличение мощности от 11.07.2017</div>
+                <div class="line__item">Техприсоединение</div>
+              </div>
+              <div class="line">
+                <div class="line__item">№00011</div>
+                <div class="line__item">Заявка на Первое присоединение от 07.07.2017</div>
+                <div class="line__item">Принята в обработку</div>
+              </div>
+              <div class="line">
+                <div class="line__item">№00015</div>
+                <div class="line__item">Заявка на Увеличение мощности от 20.07.2017</div>
+                <div class="line__item">Ожидание подписания договора</div>
+              </div>
+              <div class="line">
+                <div class="line__item">№00157</div>
+                <div class="line__item">Заявка на Увеличение мощности от 11.07.2017</div>
+                <div class="line__item">Техприсоединение</div>
+              </div>
+            </div>
+            <div class="display-none js-target" id="completed">
+              <div class="line head">
+                <div class="line__item">№2</div>
+                <div class="line__item">Наименование2</div>
+                <div class="line__item">Текущий статус2</div>
+              </div>
+              <div class="line">
+                <div class="line__item">№00001</div>
+                <div class="line__item">Заявка на Увеличение мощности от 27.07.2017</div>
+                <div class="line__item">Принята в обработку</div>
+              </div>
+              <div class="line">
+                <div class="line__item">№00005</div>
+                <div class="line__item">Заявка на Увеличение мощности от 20.07.2017</div>
+                <div class="line__item">Ожидание подписания договора</div>
+              </div>
+              <div class="line">
+                <div class="line__item">№00009</div>
+                <div class="line__item">Заявка на Увеличение мощности от 11.07.2017</div>
+                <div class="line__item">Техприсоединение</div>
+              </div>
+              <div class="line">
+                <div class="line__item">№00011</div>
+                <div class="line__item">Заявка на Первое присоединение от 07.07.2017</div>
+                <div class="line__item">Принята в обработку</div>
+              </div>
+              <div class="line">
+                <div class="line__item">№00015</div>
+                <div class="line__item">Заявка на Увеличение мощности от 20.07.2017</div>
+                <div class="line__item">Ожидание подписания договора</div>
+              </div>
+              <div class="line">
+                <div class="line__item">№00157</div>
+                <div class="line__item">Заявка на Увеличение мощности от 11.07.2017</div>
+                <div class="line__item">Техприсоединение</div>
+              </div>
+            </div>
+          </div>
+          <div class="side-right">
+            <div class="sidebar"><span class="sidebar__item">Список заявлений</span><a class="sidebar__item" href="#">Профиль</a><a class="sidebar__item exit" href="#">Выйти из аккаунта</a></div><a class="button" href="#">Подать заявление на техприсоединение</a>
+          </div>
+        </div>
+      </main>
+      <footer id="footer">
+        <div id="footer-center">
+          <div class="footer-center-inner">
+            <div class="swiper-container slider__body js-slider">
+              <div class="swiper-wrapper"><a class="swiper-slide slider__i" href="http://www.admhmao.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-1.jpg">
+                    <div class="slider__i-h">Официальный портал органов государственной власти</div></span></a><a class="swiper-slide slider__i" href="http://www.yutec-hm.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-2.jpg">
+                    <div class="slider__i-h">Югорская территориальная энергетическая компания</div></span></a><a class="swiper-slide slider__i" href="http://minenergo.gov.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-3.jpg">
+                    <div class="slider__i-h">Министерство энергетики Российской федерации</div></span></a><a class="swiper-slide slider__i" href="http://www.fas.gov.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-4.jpg">
+                    <div class="slider__i-h">Федеральная антимонопольная служба</div></span></a><a class="swiper-slide slider__i" href="http://hmao.fas.gov.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-5.jpg">
+                    <div class="slider__i-h">Управление ФАС по ХМАО</div></span></a><a class="swiper-slide slider__i" href="http://www.rectmn.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-6.jpg">
+                    <div class="slider__i-h">Региональная энергетическая комиссия</div></span></a><a class="swiper-slide slider__i" href="http://www.rael.elektra.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-7.png">
+                    <div class="slider__i-h">Объединение работодателей электроэнергетики</div></span></a>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <table class="footer-actions">
+            <tr>
+              <td class="footer-actions-copy">
+                <div>© 2012 АО «Югорская региональная электросетевая компания». Все права защищены.</div><img src="images/counter.png" width="88" height="31">
+              </td>
+              <td class="footer-actions-mail"><a href="mailto:office@yuresk.ru">office@yuresk.ru</a>
+                <ul class="footer-icons-list">
+                  <li><a href="/"><img src="images/home.gif" alt="на главную" title="на главную"></a></li>
+                  <li><a href="/feedback/"><img src="images/mail.gif" alt="напишите нам" title="напишите нам"></a></li>
+                  <li><a href="/sitemap/"><img src="images/map.gif" alt="карта сайта" title="карта сайта"></a></li>
+                </ul>
+              </td>
+              <td class="footer-actions-icons">
+                <form action="/search/" method="post">
+                  <table class="search-form">
+                    <tr>
+                      <td>
+                        <div class="placeholder search-form-placeholder">
+                          <label class="input-hint" for="search-form-text">Поиск по сайту</label>
+                          <input class="input-text" type="text" id="search-form-text" name="q">
+                        </div>
+                      </td>
+                      <td>
+                        <input class="search-form-submit" type="submit" id="input-name" value="">
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+              </td>
+              <td class="footer-actions-search">
+                Техническая поддержка – <br> <a href="http://ugraweb.ru" target="_blank">Югорские интернет решения</a</td>
+            </tr>
+          </table>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/vendor/datepicker/datepicker.min.js"></script>
+    <script src="js/vendor/jquery-filestyle/jquery-filestyle.min.js"></script>
+    <script src="js/vendor/swiper/swiper.min.js"></script>
+    <script src="js/app/main.js"></script>
+  </body>
+</html>

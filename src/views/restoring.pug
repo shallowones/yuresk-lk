@@ -1,0 +1,56 @@
+extends layout
+
+block content
+
+  .page
+    header.header
+      .wrapper
+        .header-left
+          .header__logo
+          .header__desc Югорская региональная<br>электросетевая компания
+        .header-middle Горячая линия: <span>8 3467 <b>31 85 95</b></span>
+        //.header-right
+          .header__links
+            a(href="#") Авторизоваться
+            span.delimiter |
+            a(href="#") Зарегистрироваться
+            br
+            a(href="#") Вернуться на сайт
+        .header-right Здравствуйте, Константин
+          .header__links
+            a(href="#") Вернуться на сайт
+            span.delimiter |
+            a(href="#") Выйти из аккаунта
+
+    main.main
+      .wrapper
+        h1.h1 Восстановление пароля
+
+        p Введите E-mail, который Вы указывали при регистрации.<br>
+          | На него будет отправлен код для восстановления пароля.
+
+        .block
+          .form-control.big
+            input(type="text", id="email").form__input
+            label(for="email").form__label E-mail
+          br
+          button(disabled).button Отправить код
+        .block
+          .form-control.big
+            input(type="text", id="cod").form__input.err
+            label(for="cod").form__label Введите полученный код
+          br
+          button(disabled).button Перейти к смене пароля
+        p.desc Не получили код? <a href="#" class="link">Отправить повторно</a>
+        br
+        br
+        .block
+          .form-control.big
+            input(type="text", id="pass-1").form__input
+            label(for="pass-1").form__label Введите новый пароль
+          br
+          .form-control.big
+            input(type="text", id="pass-2").form__input.err
+            label(for="pass-2").form__label Подтверждение пароля
+          br
+          button.button Сменить пароль

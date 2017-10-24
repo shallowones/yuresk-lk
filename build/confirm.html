@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Личный кабинет</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="js/vendor/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/vendor/datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="js/vendor/jquery-filestyle/jquery-filestyle.min.css">
+    <link rel="stylesheet" href="js/vendor/swiper/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="wrapper">
+          <div class="header-left">
+            <div class="header__logo"></div>
+            <div class="header__desc">Югорская региональная<br>электросетевая компания</div>
+          </div>
+          <div class="header-middle">Горячая линия: <span>8 3467 <b>31 85 95</b></span></div>
+          <!--.header-right
+          .header__links
+            a(href="#") Авторизоваться
+            span.delimiter |
+            a(href="#") Зарегистрироваться
+            br
+            a(href="#") Вернуться на сайт
+          -->
+          <div class="header-right">Здравствуйте, Константин
+            <div class="header__links"><a href="#">Вернуться на сайт</a><span class="delimiter">|</span><a href="#">Выйти из аккаунта</a></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="wrapper">
+          <h1 class="h1">Введите пароль для аккаунта</h1>
+          <p>Вы подтвердили e-mail <b>yuresk@email.com</b></p>
+          <div class="info">Пароль должен содержать не менее 6 символов</div>
+          <div class="form-control">
+            <input class="form__input valid" type="text" id="pass-1" value="123456">
+            <label class="form__label" for="pass-1">Придумайте пароль</label>
+          </div><br><br>
+          <div class="form-control">
+            <input class="form__input err" type="text" id="pass-2" value="123">
+            <label class="form__label" for="pass-2">Подтверждение пароля</label>
+          </div><br><br>
+          <button class="button">Сохранить пароль</button>
+        </div>
+      </main>
+    </div>
+    <script src="js/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/vendor/datepicker/datepicker.min.js"></script>
+    <script src="js/vendor/jquery-filestyle/jquery-filestyle.min.js"></script>
+    <script src="js/vendor/swiper/swiper.min.js"></script>
+    <script src="js/app/main.js"></script>
+  </body>
+</html>

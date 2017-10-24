@@ -1,0 +1,48 @@
+extends layout
+
+block content
+
+  .page
+    header.header
+      .wrapper
+        .header-left
+          .header__logo
+          .header__desc Югорская региональная<br>электросетевая компания
+        .header-middle Горячая линия: <span>8 3467 <b>31 85 95</b></span>
+        //.header-right
+          .header__links
+            a(href="#") Авторизоваться
+            span.delimiter |
+            a(href="#") Зарегистрироваться
+            br
+            a(href="#") Вернуться на сайт
+        .header-right Здравствуйте, Константин
+          .header__links
+            a(href="#") Вернуться на сайт
+            span.delimiter |
+            a(href="#") Выйти из аккаунта
+
+    main.main
+      .wrapper
+        h1.h1 Выберите тип пользователя
+
+        p Для каждого типа пользователей свой набор полей ввода информации, а также
+          | отдельные формы подачи заявления
+
+        .info.warning Тип пользователя нельзя будет изменить
+
+        .flex-start
+          .form-control
+            .form-line
+              input(type="radio", name="radio", id="radio-1").form__input
+              label(for="radio-1").form__label Физическое лицо
+          .form-control
+            .form-line
+              input(type="radio", name="radio", id="radio-2").form__input
+              label(for="radio-2").form__label Юридическое лицо
+          .form-control
+            .form-line
+              input(type="radio", name="radio", id="radio-3", checked).form__input
+              label(for="radio-3").form__label Индивидуальный предприниматель
+
+        button.button Сохранить выбранный тип

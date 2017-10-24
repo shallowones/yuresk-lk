@@ -1,0 +1,65 @@
+extends layout
+
+block content
+
+  .page
+    header.header
+      .wrapper
+        .header-left
+          .header__logo
+          .header__desc Югорская региональная<br>электросетевая компания
+        .header-middle Горячая линия: <span>8 3467 <b>31 85 95</b></span>
+        //.header-right
+          .header__links
+            a(href="#") Авторизоваться
+            span.delimiter |
+            a(href="#") Зарегистрироваться
+            br
+            a(href="#") Вернуться на сайт
+        .header-right Здравствуйте, Константин
+          .header__links
+            a(href="#") Вернуться на сайт
+            span.delimiter |
+            a(href="#") Выйти из аккаунта
+
+    main.main
+      .wrapper
+        h1.h1 Регистрация
+
+        .auth
+          .auth-block
+            .form-control
+              input(type="text", id="email").form__input
+              label(for="email").form__label E-mail
+              span На этот e-mail будет направлена ссылка для входа в Ваш аккаунт
+            .form-control
+              input(type="text", id="phone").form__input
+              label(for="phone").form__label Телефон
+            .flex
+              .form-control
+                input(type="text", id="word").form__input
+                label(for="word").form__label Введите слово на картинке
+              .form-control
+                .flex-right
+                  img(src="images/captcha.jpg")
+            .form-control
+              .form-line
+                input(type="checkbox", name="check", id="check-1").form__input
+                label(for="check-1").form__label.
+                  Подтверждаю ознакомленность с положениями Федерального закона РФ от 27.07.2006
+                  №152-ФЗ «О персональных данных», права и обязанности в области защиты персональных
+                  данных мне разъяснены.
+              .form-line
+                input(type="checkbox", name="check", id="check-2", checked).form__input
+                label(for="check-2").form__label.
+                  Подтверждаю свое согласие на передачу и обработку информации в электронном виду,
+                  в том числе по открытым каналам связи посредством информационно-телекоммунационной сети «Интернет».
+            button.button Зарегистрироваться
+            .form-control.desc Уже зарегистрированы?
+              a(href="#").link Авторизоваться
+          .auth-line
+          .auth-block
+            a(href="#").button Войти через ЕСИА
+            a(href="#").button Авторизация с помощью электронной подписи
+
+

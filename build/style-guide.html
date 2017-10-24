@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="js/vendor/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="js/vendor/datepicker/datepicker.min.css">
     <link rel="stylesheet" href="js/vendor/jquery-filestyle/jquery-filestyle.min.css">
+    <link rel="stylesheet" href="js/vendor/swiper/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -16,7 +17,18 @@
             <div class="header__logo"></div>
             <div class="header__desc">Югорская региональная<br>электросетевая компания</div>
           </div>
-          <div class="header-right">Горачая линия: <span>8 3467 <b>31 85 95</b></span></div>
+          <div class="header-middle">Горячая линия: <span>8 3467 <b>31 85 95</b></span></div>
+          <!--.header-right
+          .header__links
+            a(href="#") Авторизоваться
+            span.delimiter |
+            a(href="#") Зарегистрироваться
+            br
+            a(href="#") Вернуться на сайт
+          -->
+          <div class="header-right">Здравствуйте, Константин
+            <div class="header__links"><a href="#">Вернуться на сайт</a><span class="delimiter">|</span><a href="#">Выйти из аккаунта</a></div>
+          </div>
         </div>
       </header>
       <main class="main">
@@ -79,20 +91,32 @@
               </div>
             </div>
             <div class="form-control">
-              <input class="form__input" type="radio" name="radio" id="radio-1">
-              <label class="form__label" for="radio-1">Radio Default</label>
-              <input class="form__input" type="radio" name="radio" id="radio-2" checked>
-              <label class="form__label" for="radio-2">Radio Selected</label>
-              <input class="form__input" type="radio" name="radio" id="radio-3" disabled>
-              <label class="form__label" for="radio-3">Radio Disabled</label>
+              <div class="form-line">
+                <input class="form__input" type="radio" name="radio" id="radio-1">
+                <label class="form__label" for="radio-1">Radio Default</label>
+              </div>
+              <div class="form-line">
+                <input class="form__input" type="radio" name="radio" id="radio-2" checked>
+                <label class="form__label" for="radio-2">Radio Selected</label>
+              </div>
+              <div class="form-line">
+                <input class="form__input" type="radio" name="radio" id="radio-3" disabled>
+                <label class="form__label" for="radio-3">Radio Disabled</label>
+              </div>
             </div>
             <div class="form-control">
-              <input class="form__input" type="checkbox" name="check" id="check-1">
-              <label class="form__label" for="check-1">Checkbox Default</label>
-              <input class="form__input" type="checkbox" name="check" id="check-2" checked>
-              <label class="form__label" for="check-2">Checkbox Selected</label>
-              <input class="form__input" type="checkbox" name="check" id="check-3" disabled>
-              <label class="form__label" for="check-3">Checkbox Disabled</label>
+              <div class="form-line">
+                <input class="form__input" type="checkbox" name="check" id="check-1">
+                <label class="form__label" for="check-1">Checkbox Default</label>
+              </div>
+              <div class="form-line">
+                <input class="form__input" type="checkbox" name="check" id="check-2" checked>
+                <label class="form__label" for="check-2">Checkbox Selected</label>
+              </div>
+              <div class="form-line">
+                <input class="form__input" type="checkbox" name="check" id="check-3" disabled>
+                <label class="form__label" for="check-3">Checkbox Disabled</label>
+              </div>
             </div>
           </div>
           <div class="block">
@@ -169,6 +193,7 @@
     <script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
     <script src="js/vendor/datepicker/datepicker.min.js"></script>
     <script src="js/vendor/jquery-filestyle/jquery-filestyle.min.js"></script>
+    <script src="js/vendor/swiper/swiper.min.js"></script>
     <script src="js/app/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Личный кабинет</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="js/vendor/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/vendor/datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="js/vendor/jquery-filestyle/jquery-filestyle.min.css">
+    <link rel="stylesheet" href="js/vendor/swiper/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="wrapper">
+          <div class="header-left">
+            <div class="header__logo"></div>
+            <div class="header__desc">Югорская региональная<br>электросетевая компания</div>
+          </div>
+          <div class="header-middle">Горячая линия: <span>8 3467 <b>31 85 95</b></span></div>
+          <!--.header-right
+          .header__links
+            a(href="#") Авторизоваться
+            span.delimiter |
+            a(href="#") Зарегистрироваться
+            br
+            a(href="#") Вернуться на сайт
+          -->
+          <div class="header-right">Здравствуйте, Константин
+            <div class="header__links"><a href="#">Вернуться на сайт</a><span class="delimiter">|</span><a href="#">Выйти из аккаунта</a></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="wrapper">
+          <h1 class="h1">Восстановление пароля</h1>
+          <p>
+            Введите E-mail, который Вы указывали при регистрации.<br>На него будет отправлен код для восстановления пароля.</p>
+          <div class="block">
+            <div class="form-control big">
+              <input class="form__input" type="text" id="email">
+              <label class="form__label" for="email">E-mail</label>
+            </div><br>
+            <button class="button" disabled>Отправить код</button>
+          </div>
+          <div class="block">
+            <div class="form-control big">
+              <input class="form__input err" type="text" id="cod">
+              <label class="form__label" for="cod">Введите полученный код</label>
+            </div><br>
+            <button class="button" disabled>Перейти к смене пароля</button>
+          </div>
+          <p class="desc">Не получили код? <a href="#" class="link">Отправить повторно</a></p><br><br>
+          <div class="block">
+            <div class="form-control big">
+              <input class="form__input" type="text" id="pass-1">
+              <label class="form__label" for="pass-1">Введите новый пароль</label>
+            </div><br>
+            <div class="form-control big">
+              <input class="form__input err" type="text" id="pass-2">
+              <label class="form__label" for="pass-2">Подтверждение пароля</label>
+            </div><br>
+            <button class="button">Сменить пароль</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/vendor/datepicker/datepicker.min.js"></script>
+    <script src="js/vendor/jquery-filestyle/jquery-filestyle.min.js"></script>
+    <script src="js/vendor/swiper/swiper.min.js"></script>
+    <script src="js/app/main.js"></script>
+  </body>
+</html>

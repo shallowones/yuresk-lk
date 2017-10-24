@@ -66,5 +66,41 @@
       })
     }
 
+    // закрытие блока оповещения
+    {
+      const $notice = $('.js-notice')
+      const $close = $notice.find('.close')
+      $close.on('click', (e) => {
+        e.preventDefault()
+        $notice.slideUp()
+      })
+    }
+
+    // табы на списке заявлений
+    {
+      const $tab = $('.js-tab')
+      const $allTargets = $('.js-target')
+      const activeClass = 'active'
+      const showClass = 'show'
+      $tab.on('click', (e) => {
+        e.preventDefault()
+        const $this = $(e.currentTarget)
+        const $target = $($this.data('target'))
+        $tab.removeClass(activeClass)
+        $allTargets.removeClass(showClass)
+        $this.addClass(activeClass)
+        $target.addClass(showClass)
+      })
+    }
+
+    {
+     $('.js-slider').swiper({
+       nextButton: '.swiper-button-next',
+       prevButton: '.swiper-button-prev',
+       slidesPerView: 'auto',
+       loop: true
+     })
+    }
+
   })
 })(jQuery)

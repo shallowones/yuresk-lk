@@ -1,0 +1,182 @@
+extends layout
+
+block content
+
+  -
+    var statements = [
+      {
+        number: '№00001',
+        name: 'Заявка на Увеличение мощности от 27.07.2017',
+        status: 'Принята в обработку'
+      },
+      {
+        number: '№00005',
+        name: 'Заявка на Увеличение мощности от 20.07.2017',
+        status: 'Ожидание подписания договора'
+      },
+      {
+        number: '№00009',
+        name: 'Заявка на Увеличение мощности от 11.07.2017',
+        status: 'Техприсоединение'
+      },
+      {
+        number: '№00011',
+        name: 'Заявка на Первое присоединение от 07.07.2017',
+        status: 'Принята в обработку'
+      },
+      {
+        number: '№00015',
+        name: 'Заявка на Увеличение мощности от 20.07.2017',
+        status: 'Ожидание подписания договора'
+      },
+      {
+        number: '№00157',
+        name: 'Заявка на Увеличение мощности от 11.07.2017',
+        status: 'Техприсоединение'
+      }
+    ]
+
+    var sliderItems = [
+      {
+        name: 'Официальный портал органов государственной власти',
+        img: 'footer-1.jpg',
+        link: 'http://www.admhmao.ru/'
+      },
+      {
+        name: 'Югорская территориальная энергетическая компания',
+        img: 'footer-2.jpg',
+        link: 'http://www.yutec-hm.ru/'
+      },
+      {
+        name: 'Министерство энергетики Российской федерации',
+        img: 'footer-3.jpg',
+        link: 'http://minenergo.gov.ru/'
+      },
+      {
+        name: 'Федеральная антимонопольная служба',
+        img: 'footer-4.jpg',
+        link: 'http://www.fas.gov.ru/'
+      },
+      {
+        name: 'Управление ФАС по ХМАО',
+        img: 'footer-5.jpg',
+        link: 'http://hmao.fas.gov.ru/'
+      },
+      {
+        name: 'Региональная энергетическая комиссия',
+        img: 'footer-6.jpg',
+        link: 'http://www.rectmn.ru/'
+      },
+      {
+        name: 'Объединение работодателей электроэнергетики',
+        img: 'footer-7.png',
+        link: 'http://www.rael.elektra.ru/'
+      }
+    ]
+
+  .page
+    header.header
+      .wrapper
+        .header-left
+          .header__logo
+          .header__desc Югорская региональная<br>электросетевая компания
+        .header-middle Горячая линия: <span>8 3467 <b>31 85 95</b></span>
+        //.header-right
+          .header__links
+            a(href="#") Авторизоваться
+            span.delimiter |
+            a(href="#") Зарегистрироваться
+            br
+            a(href="#") Вернуться на сайт
+        .header-right Здравствуйте, Константин
+          .header__links
+            a(href="#") Вернуться на сайт
+            span.delimiter |
+            a(href="#") Выйти из аккаунта
+
+    main.main
+
+      .notice.js-notice Для подачи заявления на техприсоединение необходимо пройти <a href="#">
+        | верификацию аккаунта</a>
+        i.close
+
+      .wrapper
+        h1.h1 Список заявлений
+
+      .tabs
+        .wrapper
+          button(type="button", data-target="#all").tabs__item.js-tab.active Все
+          button(type="button", data-target="#completed").tabs__item.js-tab Завершенные
+
+      .side.wrapper
+        .side-left
+          #all.display-none.js-target.show
+            .line.head
+              .line__item №
+              .line__item Наименование
+              .line__item Текущий статус
+            each statement in statements
+              .line
+                .line__item= statement.number
+                .line__item= statement.name
+                .line__item= statement.status
+          #completed.display-none.js-target
+            .line.head
+              .line__item №2
+              .line__item Наименование2
+              .line__item Текущий статус2
+            each statement in statements
+              .line
+                .line__item= statement.number
+                .line__item= statement.name
+                .line__item= statement.status
+        .side-right
+          .sidebar
+            span.sidebar__item Список заявлений
+            a(href="#").sidebar__item Профиль
+            a(href="#").sidebar__item.exit Выйти из аккаунта
+          a(href="#").button Подать заявление на техприсоединение
+    footer#footer
+      #footer-center
+        .footer-center-inner
+          .swiper-container.slider__body.js-slider
+            .swiper-wrapper
+              each sliderItem in sliderItems
+                a(href= sliderItem.link, target="_blank").swiper-slide.slider__i
+                  span.slider__i-img-wrap
+                    img(src='images/' + sliderItem.img)
+                    .slider__i-h= sliderItem.name
+          .swiper-button-next
+          .swiper-button-prev
+
+        table.footer-actions
+          tr
+            td.footer-actions-copy
+              div © 2012 АО «Югорская региональная электросетевая компания». Все права защищены.
+              img(src="images/counter.png", width="88", height="31")
+            td.footer-actions-mail
+              a(href="mailto:office@yuresk.ru") office@yuresk.ru
+              ul.footer-icons-list
+                li
+                  a(href="/")
+                    img(src="images/home.gif", alt="на главную", title="на главную")
+                li
+                  a(href="/feedback/")
+                    img(src="images/mail.gif", alt="напишите нам", title="напишите нам")
+                li
+                  a(href="/sitemap/")
+                    img(src="images/map.gif", alt="карта сайта", title="карта сайта")
+            td.footer-actions-icons
+              form(action="/search/", method="post")
+                table.search-form
+                  tr
+                    td
+                     .placeholder.search-form-placeholder
+                       label(for="search-form-text").input-hint Поиск по сайту
+                       input(type="text", id="search-form-text", name="q").input-text
+                    td
+                      input(type="submit", id="input-name", value="").search-form-submit
+            td.footer-actions-search Техническая поддержка – <br> <a href="http://ugraweb.ru" target="_blank">
+              | Югорские интернет решения</a
+
+
