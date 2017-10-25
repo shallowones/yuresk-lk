@@ -1366,6 +1366,13 @@ p > a:hover {
   margin-left: 0;
   padding-top: 0;
 }
+.flex.right {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.flex.right .form-line .form__label {
+  width: auto;
+}
 .process {
   margin-top: 40px;
   background-color: #e6ecf2;
