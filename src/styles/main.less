@@ -231,7 +231,27 @@ a {
         margin-bottom: 20px;
         border-color: #f25618;
 
-        & ~ span {
+        & ~ .err-mess {
+          position: absolute;
+          left: 320px;
+          bottom: 0;
+          margin-top: 0;
+          opacity: 1;
+        }
+      }
+    }
+
+    & .form__select {
+
+      &.err {
+
+        & ~ .ui-selectmenu-button.ui-button {
+          margin-bottom: 20px;
+          border-color: #f25618;
+        }
+
+        & ~ .err-mess {
+          color: #f25618;
           position: absolute;
           left: 320px;
           bottom: 0;

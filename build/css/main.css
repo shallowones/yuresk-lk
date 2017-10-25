@@ -653,7 +653,19 @@ a {
   margin-bottom: 20px;
   border-color: #f25618;
 }
-.form-block .form__input.err ~ span {
+.form-block .form__input.err ~ .err-mess {
+  position: absolute;
+  left: 320px;
+  bottom: 0;
+  margin-top: 0;
+  opacity: 1;
+}
+.form-block .form__select.err ~ .ui-selectmenu-button.ui-button {
+  margin-bottom: 20px;
+  border-color: #f25618;
+}
+.form-block .form__select.err ~ .err-mess {
+  color: #f25618;
   position: absolute;
   left: 320px;
   bottom: 0;
