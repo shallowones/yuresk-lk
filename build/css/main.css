@@ -610,7 +610,7 @@ a {
 }
 .form-block .form__label {
   position: static;
-  width: 500px;
+  width: 300px;
   margin-right: 20px;
 }
 .form-block .calendar-icon {
@@ -622,6 +622,11 @@ a {
 }
 .form-block.form-line .form__label {
   width: 100%;
+}
+.form-block .form__input,
+.form-block .ui-selectmenu-button.ui-button,
+.form-block .right {
+  width: calc(100% - 320px);
 }
 .form-block .form__input[type="checkbox"] + .form__label,
 .form-block .form__input[type="radio"] + .form__label {

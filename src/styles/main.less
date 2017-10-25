@@ -175,7 +175,7 @@ a {
 
     & .form__label {
       position: static;
-      width: 500px;
+      width: 300px;
       margin-right: 20px;
     }
 
@@ -190,6 +190,10 @@ a {
 
     &.form-line .form__label {
       width: 100%;
+    }
+
+    & .form__input, & .ui-selectmenu-button.ui-button, & .right {
+      width: ~"calc(100% - 320px)";
     }
 
     & .form__input {
