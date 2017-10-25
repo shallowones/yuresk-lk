@@ -623,6 +623,10 @@ a {
 .form-block.form-line .form__label {
   width: 100%;
 }
+.form-block .form__input[type="checkbox"] + .form__label,
+.form-block .form__input[type="radio"] + .form__label {
+  margin-right: 0;
+}
 .form-control {
   display: inline-block;
   vertical-align: top;
@@ -645,6 +649,41 @@ a {
   position: absolute;
   left: 0;
   top: 0;
+}
+.form__textarea {
+  width: 100%;
+  height: 100px;
+  display: block;
+  border: 2px solid #c2c7cc;
+  border-radius: 6px;
+  background: #fff;
+  padding: 12px 18px;
+  outline: none;
+  transition: .3s;
+}
+.form__textarea:focus {
+  border-color: #177ee6;
+}
+.form__textarea:hover {
+  background-color: #f7f9fa;
+}
+.form__textarea[disabled] {
+  background-color: #e1e3e6;
+}
+.form__textarea[disabled]:hover {
+  cursor: default;
+}
+.form__textarea[disabled] + .form__label {
+  color: #999;
+}
+.form__textarea.err {
+  border-color: #f25618;
+}
+.form__textarea.err ~ span {
+  opacity: 1;
+}
+.form__textarea.valid {
+  border-color: #60bf4c;
 }
 .form__input {
   width: 100%;
@@ -1541,6 +1580,15 @@ a.sidebar__item:hover {
 }
 .line__item:last-child {
   width: 215px;
+}
+.req {
+  color: #f25618;
+  font-style: normal;
+  font-size: 16px;
+  margin: 0 5px;
+}
+.req:after {
+  content: '*';
 }
 .js-target {
   -webkit-animation: fadein 1s;
