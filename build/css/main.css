@@ -597,6 +597,30 @@ a {
 .block {
   margin-bottom: 30px;
 }
+.form-block {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  line-height: 16px;
+}
+.form-block .form__label {
+  position: static;
+  width: 200px;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+.form-block .calendar-icon {
+  top: 6px;
+}
+.form-block .button {
+  width: 100%;
+  margin: 0;
+}
+.form-block.form-line .form__label {
+  width: 100%;
+}
 .form-control {
   display: inline-block;
   vertical-align: top;

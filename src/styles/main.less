@@ -166,6 +166,33 @@ a {
 
 .form {
 
+  &-block {
+    margin-bottom: 16px;
+    display: flex;
+    position: relative;
+    line-height: 16px;
+
+    & .form__label {
+      position: static;
+      width: 200px;
+      padding-top: 10px;
+      margin-right: 10px;
+    }
+
+    & .calendar-icon {
+      top: 6px;
+    }
+
+    & .button {
+      width: 100%;
+      margin: 0;
+    }
+
+    &.form-line .form__label {
+      width: 100%;
+    }
+  }
+
   &-control {
     display: inline-block;
     vertical-align: top;
