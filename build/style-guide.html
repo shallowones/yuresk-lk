@@ -132,7 +132,7 @@
           <div class="block">
             <div class="form-control">
               <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
-              <input class="form__input js-file" type="file" id="file-1">
+              <input class="form__input js-file" type="file" id="file-1" multiple>
               <label class="form__label" for="file-1">File Default</label><span>Размер файла не более 10 МБ</span>
             </div><br><br>
             <div class="form-control">
@@ -194,7 +194,7 @@
             </div>
             <div class="form-block">
               <label class="form__label" for="input-11">Input Default Input Default Input Default Input Default Input Default<i class="req"></i></label>
-              <input class="form__input" type="text" id="input-11">
+              <input class="form__input err" type="text" id="input-11"><span>Ошибка Ошибка Ошибка Ошибка Ошибка Ошибка Ошибка Ошибка</span>
             </div>
           </div>
           <div class="block">
@@ -277,6 +277,41 @@
               <textarea class="form__textarea" id="textarea"></textarea>
             </div>
           </div>
+          <div class="block">
+            <div class="form-block">
+              <label class="form__label" for="file-3">File Default</label>
+              <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+              <input class="form__input js-file" type="file" id="file-3" multiple><span>Размер каждого файла не более 10 МБ</span>
+            </div>
+          </div>
+          <div class="block">
+            <div class="form-block with-controls">
+              <label class="form__label" for="input-20">Input Default</label>
+              <input class="form__input" type="text" id="input-20">
+              <button class="button remove" type="button"></button>
+            </div>
+            <div class="form-block with-controls">
+              <label class="form__label" for="input-21">Input Default</label>
+              <input class="form__input" type="text" id="input-21">
+              <button class="button remove" type="button"></button>
+            </div>
+            <button class="button add" type="button">Добавить</button>
+          </div>
+          <div class="block">
+            <h4 class="h4">Этап 1
+              <button class="button remove" type="button"></button>
+            </h4>
+          </div>
+          <div class="block">
+            <h4 class="h4">Этап 2
+              <button class="button remove" type="button"></button>
+            </h4>
+          </div>
+          <div class="block">
+            <h4 class="h4">Этап 3
+              <button class="button remove" type="button"></button>
+            </h4>
+          </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
       </main>
     </div>

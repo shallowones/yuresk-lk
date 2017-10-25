@@ -158,6 +158,24 @@ a {
       background-color: #e1e3e6;
     }
   }
+
+  &.add {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+  }
+
+  &.remove {
+    width: 36px;
+    height: 36px;
+    background: #177ee6 data-uri('../images/svg/close.svg') no-repeat center;
+    background-size: 10px;
+    margin: 0;
+
+    &:hover {
+      background-color: #3399ff;
+    }
+  }
 }
 
 .block {
@@ -192,7 +210,11 @@ a {
       width: 100%;
     }
 
-    & .form__input, & .ui-selectmenu-button.ui-button, & .right {
+    & .form__input,
+    & .ui-selectmenu-button.ui-button,
+    & .right,
+    & .form__textarea,
+    & div.jfilestyle.jfilestyle-corner {
       width: ~"calc(100% - 320px)";
     }
 
@@ -203,6 +225,42 @@ a {
         & + .form__label {
           margin-right: 0;
         }
+      }
+
+      &.err {
+        margin-bottom: 20px;
+        border-color: #f25618;
+
+        & ~ span {
+          position: absolute;
+          left: 320px;
+          bottom: 0;
+          margin-top: 0;
+          opacity: 1;
+        }
+      }
+    }
+
+    & div.jfilestyle.jfilestyle-corner {
+      margin-bottom: 24px;
+    }
+
+    & .form__input[type="file"] ~ span {
+      position: absolute;
+      left: 340px;
+      bottom: 0;
+      margin-top: 0;
+    }
+
+    &.with-controls {
+
+      & .form__input {
+        width: ~"calc(100% - 376px)";
+      }
+
+      & > .remove {
+        width: 36px;
+        margin-left: 20px;
       }
     }
   }
@@ -828,7 +886,7 @@ div.jfilestyle {
   }
 }
 
-.h1, .h2, .h3 {
+.h1, .h2, .h3, .h4 {
   margin: 0 0 32px;
   font-weight: normal;
 }
@@ -857,6 +915,13 @@ div.jfilestyle {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 22px;
+  position: relative;
+
+  & > .remove {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 
 p {

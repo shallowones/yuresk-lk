@@ -106,7 +106,7 @@ block content
         .block
           .form-control
             input(type="hidden", name="MAX_FILE_SIZE", value="10485760")
-            input(type="file", id="file-1").form__input.js-file
+            input(type="file", id="file-1", multiple).form__input.js-file
             label(for="file-1").form__label File Default
             span Размер файла не более 10 МБ
           br
@@ -162,7 +162,8 @@ block content
           .form-block
             label(for="input-11").form__label Input Default Input Default Input Default Input Default Input Default
               i.req
-            input(type="text", id="input-11").form__input
+            input(type="text", id="input-11").form__input.err
+            span Ошибка Ошибка Ошибка Ошибка Ошибка Ошибка Ошибка Ошибка
 
         .block
           .form-block
@@ -228,3 +229,52 @@ block content
           .form-block
             label(for="textarea").form__label Textarea Default Textarea Default Textarea Default Textarea Default
             textarea(id="textarea").form__textarea
+
+        .block
+          .form-block
+            label(for="file-3").form__label File Default
+            input(type="hidden", name="MAX_FILE_SIZE", value="10485760")
+            input(type="file", id="file-3", multiple).form__input.js-file
+            span Размер каждого файла не более 10 МБ
+
+        .block
+          .form-block.with-controls
+            label(for="input-20").form__label Input Default
+            input(type="text", id="input-20").form__input
+            button(type="button").button.remove
+          .form-block.with-controls
+            label(for="input-21").form__label Input Default
+            input(type="text", id="input-21").form__input
+            button(type="button").button.remove
+          button(type="button").button.add Добавить
+
+        .block
+          h4.h4 Этап 1
+            button(type="button").button.remove
+        .block
+          h4.h4 Этап 2
+            button(type="button").button.remove
+        .block
+          h4.h4 Этап 3
+            button(type="button").button.remove
+
+
+
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br

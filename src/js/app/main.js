@@ -3,9 +3,9 @@
 
     // работа с инпутами (убираем класс err при вводе чего-нибудь)
     {
-      $('.form__input.err').on('keyup', (e) => {
+      /*$('.form__input.err').on('keyup', (e) => {
         $(e.currentTarget).removeClass('err')
-      })
+      })*/
     }
 
     // кастомизация селекта

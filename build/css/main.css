@@ -594,6 +594,21 @@ a {
   cursor: default;
   background-color: #e1e3e6;
 }
+.button.add {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+.button.remove {
+  width: 36px;
+  height: 36px;
+  background: #177ee6 url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20212.982%20212.982%22%20style%3D%22enable-background%3Anew%200%200%20212.982%20212.982%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22512px%22%20height%3D%22512px%22%3E%0A%3Cg%20id%3D%22Close%22%3E%0A%09%3Cpath%20style%3D%22fill-rule%3Aevenodd%3Bclip-rule%3Aevenodd%3B%22%20d%3D%22M131.804%2C106.491l75.936-75.936c6.99-6.99%2C6.99-18.323%2C0-25.312%20%20%20c-6.99-6.99-18.322-6.99-25.312%2C0l-75.937%2C75.937L30.554%2C5.242c-6.99-6.99-18.322-6.99-25.312%2C0c-6.989%2C6.99-6.989%2C18.323%2C0%2C25.312%20%20%20l75.937%2C75.936L5.242%2C182.427c-6.989%2C6.99-6.989%2C18.323%2C0%2C25.312c6.99%2C6.99%2C18.322%2C6.99%2C25.312%2C0l75.937-75.937l75.937%2C75.937%20%20%20c6.989%2C6.99%2C18.322%2C6.99%2C25.312%2C0c6.99-6.99%2C6.99-18.322%2C0-25.312L131.804%2C106.491z%22%20fill%3D%22%23FFFFFF%22%2F%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A") no-repeat center;
+  background-size: 10px;
+  margin: 0;
+}
+.button.remove:hover {
+  background-color: #3399ff;
+}
 .block {
   margin-bottom: 30px;
 }
@@ -625,12 +640,41 @@ a {
 }
 .form-block .form__input,
 .form-block .ui-selectmenu-button.ui-button,
-.form-block .right {
+.form-block .right,
+.form-block .form__textarea,
+.form-block div.jfilestyle.jfilestyle-corner {
   width: calc(100% - 320px);
 }
 .form-block .form__input[type="checkbox"] + .form__label,
 .form-block .form__input[type="radio"] + .form__label {
   margin-right: 0;
+}
+.form-block .form__input.err {
+  margin-bottom: 20px;
+  border-color: #f25618;
+}
+.form-block .form__input.err ~ span {
+  position: absolute;
+  left: 320px;
+  bottom: 0;
+  margin-top: 0;
+  opacity: 1;
+}
+.form-block div.jfilestyle.jfilestyle-corner {
+  margin-bottom: 24px;
+}
+.form-block .form__input[type="file"] ~ span {
+  position: absolute;
+  left: 340px;
+  bottom: 0;
+  margin-top: 0;
+}
+.form-block.with-controls .form__input {
+  width: calc(100% - 376px);
+}
+.form-block.with-controls > .remove {
+  width: 36px;
+  margin-left: 20px;
 }
 .form-control {
   display: inline-block;
@@ -1156,7 +1200,8 @@ div.jfilestyle .focus-jfilestyle {
 }
 .h1,
 .h2,
-.h3 {
+.h3,
+.h4 {
   margin: 0 0 32px;
   font-weight: normal;
 }
@@ -1180,6 +1225,12 @@ div.jfilestyle .focus-jfilestyle {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 22px;
+  position: relative;
+}
+.h4 > .remove {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 p {
   margin: 0 0 20px;
