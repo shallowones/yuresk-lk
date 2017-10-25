@@ -602,14 +602,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   line-height: 16px;
 }
 .form-block .form__label {
   position: static;
-  width: 200px;
-  padding-top: 10px;
-  margin-right: 10px;
+  width: 500px;
+  margin-right: 20px;
 }
 .form-block .calendar-icon {
   top: 6px;
