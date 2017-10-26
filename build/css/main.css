@@ -1597,6 +1597,9 @@ p > a:hover {
 .tabs__item:hover {
   cursor: pointer;
 }
+.nowrap {
+  white-space: nowrap;
+}
 .side {
   display: -webkit-box;
   display: -ms-flexbox;
