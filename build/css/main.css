@@ -635,6 +635,11 @@ a {
   width: 100%;
   margin: 0;
 }
+.form-block .button.add {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .form-block.form-line .form__label {
   width: 100%;
 }
@@ -687,6 +692,16 @@ a {
 .form-block.with-controls > .remove {
   width: 36px;
   margin-left: 20px;
+}
+.form-block.with-close .form__input {
+  padding-right: 38px;
+}
+.form-block.with-close .remove {
+  position: absolute;
+  right: 8px;
+  top: calc(50% - 12px);
+  width: 24px;
+  height: 24px;
 }
 .form-control {
   display: inline-block;
@@ -894,6 +909,12 @@ a {
 }
 .form__input[type="checkbox"]:disabled + .form__label:hover {
   cursor: default;
+}
+.form__input[type="checkbox"].err + .form__label {
+  color: #f25618;
+}
+.form__input[type="checkbox"].err + .form__label:before {
+  border-color: #f25618;
 }
 .form__input[type="file"] ~ span {
   opacity: 1;

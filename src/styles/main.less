@@ -204,6 +204,12 @@ a {
     & .button {
       width: 100%;
       margin: 0;
+
+      &.add {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     &.form-line .form__label {
@@ -281,6 +287,21 @@ a {
       & > .remove {
         width: 36px;
         margin-left: 20px;
+      }
+    }
+
+    &.with-close {
+
+      & .form__input {
+        padding-right: 38px;
+      }
+
+      & .remove {
+        position: absolute;
+        right: 8px;
+        top: ~"calc(50% - 12px)";
+        width: 24px;
+        height: 24px;
       }
     }
   }
@@ -531,6 +552,14 @@ a {
 
         &:hover {
           cursor: default;
+        }
+      }
+
+      &.err + .form__label {
+        color: #f25618;
+
+        &:before {
+          border-color: #f25618;
         }
       }
     }
