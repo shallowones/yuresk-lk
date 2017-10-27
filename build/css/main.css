@@ -1912,7 +1912,7 @@ a.sidebar__item:hover {
   right: -40px;
 }
 .slider__body ~ .swiper-button-prev {
-  left: -40px;
+  left: -10px;
 }
 .slider__body ~ .swiper-button-next,
 .slider__body ~ .swiper-button-prev {
