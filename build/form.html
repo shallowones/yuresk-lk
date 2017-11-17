@@ -33,96 +33,78 @@
         </div>
       </header>
       <main class="main">
-        <div class="notice js-notice">
-          Для подачи заявления на техприсоединение необходимо пройти <a href="#">верификацию аккаунта</a><i class="close"></i></div>
         <div class="wrapper">
-          <h1 class="h1">Список заявлений</h1>
+          <h1 class="h1">Заявление №000001</h1>
         </div>
-        <div class="tabs">
+        <div class="block back-g">
           <div class="wrapper">
-            <button class="tabs__item js-tab active" type="button" data-target="#all">Все</button>
-            <button class="tabs__item js-tab" type="button" data-target="#completed">Завершенные</button>
+            <h3 class="h3">Обсуждение</h3>
+            <div class="form-control full">
+              <label class="form__label" for="textarea">Текст комментария<i class="req"></i></label>
+              <textarea class="form__textarea" id="textarea"></textarea>
+            </div>
+            <div class="flex al-center">
+              <div class="form-control">
+                <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+                <input class="form__input js-file" type="file" id="file-1" multiple>
+                <label class="form__label" for="file-1">Прикрепить файл</label><span>Размер файла не более 10 МБ</span>
+              </div>
+              <button class="button" type="button">Отправить</button>
+            </div>
           </div>
         </div>
-        <div class="side wrapper">
-          <div class="side-left">
-            <div class="display-none js-target show" id="all">
-              <div class="line head">
-                <div class="line__item">№</div>
-                <div class="line__item">Наименование</div>
-                <div class="line__item">Текущий статус</div>
-              </div>
-              <div class="line">
-                <div class="line__item">№00001</div>
-                <div class="line__item">Заявка на Увеличение мощности от 27.07.2017</div>
-                <div class="line__item">Принята в обработку</div>
-              </div>
-              <div class="line">
-                <div class="line__item">№00005</div>
-                <div class="line__item">Заявка на Увеличение мощности от 20.07.2017</div>
-                <div class="line__item">Ожидание подписания договора</div>
-              </div>
-              <div class="line">
-                <div class="line__item">№00009</div>
-                <div class="line__item">Заявка на Увеличение мощности от 11.07.2017</div>
-                <div class="line__item">Техприсоединение</div>
-              </div>
-              <div class="line">
-                <div class="line__item">№00011</div>
-                <div class="line__item">Заявка на Первое присоединение от 07.07.2017</div>
-                <div class="line__item">Принята в обработку</div>
-              </div>
-              <div class="line">
-                <div class="line__item">№00015</div>
-                <div class="line__item">Заявка на Увеличение мощности от 20.07.2017</div>
-                <div class="line__item">Ожидание подписания договора</div>
-              </div>
-              <div class="line">
-                <div class="line__item">№00157</div>
-                <div class="line__item">Заявка на Увеличение мощности от 11.07.2017</div>
-                <div class="line__item">Техприсоединение</div>
+        <div class="wrapper">
+          <div class="comment-block">
+            <div class="comment">
+              <div class="comment-line"><span class="name"><b>Иванов Иван Иванович</b> (Вы)</span><span class="delimiter">|</span><span class="date">01.11.2016 11:35</span></div>
+              <p>
+                Политическая социализация, несмотря на внешние воздействия, вероятна.
+                Элемент политического процесса предсказуем. Политическое учение Руссо
+                интегрирует конструктивный авторитаризм. Политическая коммуникация
+                традиционно символизирует системный христианско-демократический национализм.
+                Политический процесс в современной России, короче говоря, категорически
+                вызывает плюралистический политический процесс в современной России,
+                указывает в своем исследовании К.Поппер.
+              </p>
+              <div class="comment-files"><a class="link" href="#">Планировка земельного участка.doc</a></div>
+              <div class="flex-right">
+                <button class="comment__button" type="button">Цитировать</button>
               </div>
             </div>
-            <div class="display-none js-target" id="completed">
-              <div class="line head">
-                <div class="line__item">№2</div>
-                <div class="line__item">Наименование2</div>
-                <div class="line__item">Текущий статус2</div>
-              </div>
-              <div class="line">
-                <div class="line__item">№00001</div>
-                <div class="line__item">Заявка на Увеличение мощности от 27.07.2017</div>
-                <div class="line__item">Принята в обработку</div>
-              </div>
-              <div class="line">
-                <div class="line__item">№00005</div>
-                <div class="line__item">Заявка на Увеличение мощности от 20.07.2017</div>
-                <div class="line__item">Ожидание подписания договора</div>
-              </div>
-              <div class="line">
-                <div class="line__item">№00009</div>
-                <div class="line__item">Заявка на Увеличение мощности от 11.07.2017</div>
-                <div class="line__item">Техприсоединение</div>
-              </div>
-              <div class="line">
-                <div class="line__item">№00011</div>
-                <div class="line__item">Заявка на Первое присоединение от 07.07.2017</div>
-                <div class="line__item">Принята в обработку</div>
-              </div>
-              <div class="line">
-                <div class="line__item">№00015</div>
-                <div class="line__item">Заявка на Увеличение мощности от 20.07.2017</div>
-                <div class="line__item">Ожидание подписания договора</div>
-              </div>
-              <div class="line">
-                <div class="line__item">№00157</div>
-                <div class="line__item">Заявка на Увеличение мощности от 11.07.2017</div>
-                <div class="line__item">Техприсоединение</div>
+            <div class="comment">
+              <div class="comment-line"><span class="name"><b>Иванов Максим</b> (Представитель ЮРЭСК)</span><span class="delimiter">|</span><span class="date">01.11.2016 10:05</span></div>
+              <p>
+                Технология коммуникации неизбежна. Англо-американский тип политической
+                культуры неизбежен. Мажоритарная избирательная система интегрирует
+                антропологический субъект власти.
+              </p>
+              <div class="comment-images"><a class="comment-link" href="images/comment-1.jpg" data-fancybox="group"><img class="comment__img" src="images/comment-1-small.jpg"></a><a class="comment-link" href="images/comment-2.jpg" data-fancybox="group"><img class="comment__img" src="images/comment-2-small.jpg"></a></div>
+              <div class="flex-right">
+                <button class="comment__button" type="button">Цитировать</button>
               </div>
             </div>
-          </div>
-          <div class="side-right">
-            <div class="sidebar"><span class="sidebar__item">Список заявлений</span><a class="sidebar__item" href="#">Профиль</a><a class="sidebar__item exit" href="#">Выйти из аккаунта</a></div><a class="button" href="#">Подать заявление на техприсоединение</a>
+            <div class="comment">
+              <div class="comment-line"><span class="name"><b>Иванов Иван Иванович</b> (Вы)</span><span class="delimiter">|</span><span class="date">31.10.2016  21:12</span></div>
+              <div class="comment-quote">
+                <p><b>Иванов Максим</b> писал(-ла):</p>
+                <p>
+                  Технология коммуникации неизбежна. Англо-американский тип политической
+                  культуры неизбежен. Мажоритарная избирательная система интегрирует
+                  антропологический субъект власти.
+                </p>
+              </div>
+              <p>Да, необходимо подготовить документы.</p>
+              <div class="flex-right">
+                <button class="comment__button" type="button">Цитировать</button>
+              </div>
+            </div>
+            <div class="comment-more">
+              <button class="comment-more__button" type="button">Показать еще 10</button>
+            </div>
+            <!-- добавить атрибут disabled, когда начинается ajax-запрос-->
+            <div class="comment-more">
+              <button class="comment-more__button" type="button" disabled>Показать еще 10</button>
+            </div>
           </div>
         </div>
       </main>

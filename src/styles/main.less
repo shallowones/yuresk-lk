@@ -180,6 +180,14 @@ a {
 
 .block {
   margin-bottom: 30px;
+
+  &.back-g {
+    background-color: #e6ecf2;
+    padding: 38px 0;
+    margin-bottom: 10px;
+
+    & .form-control {}
+  }
 }
 
 .form {
@@ -324,6 +332,11 @@ a {
 
     &.big {
       width: 376px;
+    }
+
+    &.full {
+      margin: 0 0 20px;
+      width: 100%;
     }
   }
 
@@ -905,6 +918,7 @@ div.jfilestyle {
     display: flex;
     justify-content: space-between;
     height: 36px;
+    background-color: #fff;
 
     & input:first-child {
       width: ~"calc(100% - 70px)" !important;
@@ -1113,6 +1127,14 @@ p {
 
     & .form-line .form__label {
       width: auto;
+    }
+  }
+
+  &.al-center {
+    align-items: center;
+
+    & .button {
+      margin: 0;
     }
   }
 }
@@ -1462,6 +1484,130 @@ a.sidebar__item {
   to {
     opacity: 1;
   }
+}
+
+.comment {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 24px 0;
+  font-size: 14px;
+
+  &-block {
+    margin-bottom: 80px;
+  }
+
+  &-line {
+    margin-bottom: 24px;
+  }
+
+  & > p {
+    margin: 0 0 24px;
+  }
+
+  &-files {
+
+    & > a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__button {
+    background: transparent;
+    border: none;
+    color: #297acc;
+    font-weight: bold;
+    outline: none;
+    transition: color .3s;
+
+    &:hover {
+      cursor: pointer;
+      color: #3299cc;
+    }
+  }
+
+  &-images {
+    margin-left: -20px;
+  }
+
+  &-link {
+    width: 140px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 10px 20px;
+    outline: none;
+  }
+
+  &__img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &-quote {
+    background-color: #f2f2f2;
+    padding: 22px 20px;
+    color: #999;
+    margin-bottom: 24px;
+
+    & > p {
+      margin: 0;
+
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &-more {
+    text-align: center;
+    margin-top: 24px;
+
+    &__button {
+      width: 300px;
+      height: 40px;
+      background: #edf0f2;
+      border: none;
+      border-radius: 6px;
+      outline: none;
+      transition: background-color .3s;
+      position: relative;
+      font-weight: bold;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #d1d4d6;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #edf0f2 url('../images/loader.gif') no-repeat center;
+        background-size: 50px;
+        border-radius: 6px;
+        opacity: 0;
+        transition: opacity .3s;
+      }
+
+      &:disabled {
+
+        &:hover {
+          cursor: default;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.date {
+  color: #999;
 }
 
 /* -------------------------------------------------------------------------- */
