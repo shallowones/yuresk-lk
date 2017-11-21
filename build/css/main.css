@@ -609,6 +609,47 @@ a {
 .button.remove:hover {
   background-color: #3399ff;
 }
+.button.gray {
+  background-color: #f2f2f2;
+  box-shadow: none;
+  margin: 0 0 10px;
+  width: 220px;
+  color: #333;
+  transition: background-color 0.3s;
+}
+.button.gray > .icon {
+  margin-left: 0;
+}
+.button.gray.full {
+  width: 100%;
+}
+.button.gray:hover {
+  background-color: #e1e3e6;
+}
+.button.green {
+  background-color: #49c54d;
+}
+.button.green:hover {
+  background-color: #5fce31;
+}
+.icon {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px;
+  width: 16px;
+  height: 16px;
+  background: no-repeat center;
+  background-size: 100%;
+}
+.icon.back {
+  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2026.676%2026.676%22%20style%3D%22enable-background%3Anew%200%200%2026.676%2026.676%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22512px%22%20height%3D%22512px%22%3E%0A%3Cg%3E%0A%09%3Cpath%20d%3D%22M26.105%2C21.891c-0.229%2C0-0.439-0.131-0.529-0.346l0%2C0c-0.066-0.156-1.716-3.857-7.885-4.59%20%20%20c-1.285-0.156-2.824-0.236-4.693-0.25v4.613c0%2C0.213-0.115%2C0.406-0.304%2C0.508c-0.188%2C0.098-0.413%2C0.084-0.588-0.033L0.254%2C13.815%20%20%20C0.094%2C13.708%2C0%2C13.528%2C0%2C13.339c0-0.191%2C0.094-0.365%2C0.254-0.477l11.857-7.979c0.175-0.121%2C0.398-0.129%2C0.588-0.029%20%20%20c0.19%2C0.102%2C0.303%2C0.295%2C0.303%2C0.502v4.293c2.578%2C0.336%2C13.674%2C2.33%2C13.674%2C11.674c0%2C0.271-0.191%2C0.508-0.459%2C0.562%20%20%20C26.18%2C21.891%2C26.141%2C21.891%2C26.105%2C21.891z%22%20fill%3D%22%23297acc%22%2F%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+}
+.icon.status {
+  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2016.087%2016.087%22%20style%3D%22enable-background%3Anew%200%200%2016.087%2016.087%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22512px%22%20height%3D%22512px%22%3E%0A%3Cg%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20d%3D%22M6.5%2C3.478c-3.59%2C0-6.5%2C2.238-6.5%2C5c0%2C1.354%2C0.701%2C2.585%2C1.839%2C3.485%20%20%20%20c-0.066%2C0.918-0.287%2C2.041-0.927%2C2.646c1.274%2C0%2C2.576-0.798%2C3.399-1.422c0.684%2C0.188%2C1.42%2C0.291%2C2.189%2C0.291%20%20%20%20c3.59%2C0%2C6.5-2.237%2C6.5-5C13%2C5.716%2C10.09%2C3.478%2C6.5%2C3.478z%22%20fill%3D%22%23297acc%22%2F%3E%0A%09%09%3Cpath%20d%3D%22M15.14%2C8.965C15.687%2C8.234%2C16%2C7.384%2C16%2C6.478c0-2.762-2.91-5-6.5-5%20%20%20%20c-1.58%2C0-3.028%2C0.434-4.154%2C1.154C5.876%2C2.532%2C6.43%2C2.478%2C7%2C2.478c3.866%2C0%2C7%2C2.463%2C7%2C5.5c0%2C1.197-0.485%2C2.306-1.312%2C3.207%20%20%20%20c0.821%2C0.624%2C2.125%2C1.424%2C3.399%2C1.424C15.181%2C11.749%2C15.116%2C9.843%2C15.14%2C8.965z%22%20fill%3D%22%23297acc%22%2F%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+}
+.icon.edit {
+  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2016.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22512px%22%20height%3D%22512px%22%20viewBox%3D%220%200%20528.899%20528.899%22%20style%3D%22enable-background%3Anew%200%200%20528.899%20528.899%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%3E%0A%09%3Cpath%20d%3D%22M328.883%2C89.125l107.59%2C107.589l-272.34%2C272.34L56.604%2C361.465L328.883%2C89.125z%20M518.113%2C63.177l-47.981-47.981%20%20%20c-18.543-18.543-48.653-18.543-67.259%2C0l-45.961%2C45.961l107.59%2C107.59l53.611-53.611%20%20%20C532.495%2C100.753%2C532.495%2C77.559%2C518.113%2C63.177z%20M0.3%2C512.69c-1.958%2C8.812%2C5.998%2C16.708%2C14.811%2C14.565l119.891-29.069%20%20%20L27.473%2C390.597L0.3%2C512.69z%22%20fill%3D%22%23297acc%22%2F%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+}
 .block {
   margin-bottom: 30px;
 }
@@ -1606,14 +1647,34 @@ p > a:hover {
 .tabs__item:first-child {
   margin-left: 0;
 }
+.tabs__item.warn {
+  color: #f25618;
+}
+.tabs__item.warn .number {
+  background-color: #f25618;
+}
 .tabs__item.active {
   color: #ff7f00;
 }
 .tabs__item.active:after {
   opacity: 1;
 }
+.tabs__item.active .number {
+  background-color: #ff7f00;
+}
 .tabs__item:hover {
   cursor: pointer;
+}
+.number {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px;
+  color: #fff;
+  background-color: #999;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
 }
 .nowrap {
   white-space: nowrap;
@@ -1824,6 +1885,220 @@ a.sidebar__item:hover {
 }
 .date {
   color: #999;
+}
+.navigate {
+  margin: 24px 0;
+}
+.bloc {
+  margin-bottom: 40px;
+}
+.bloc > .h2 {
+  margin-bottom: 20px;
+}
+.bloc > .list:last-child {
+  margin-bottom: 0;
+}
+.list {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 18px;
+}
+.left {
+  width: 240px;
+  color: #999;
+}
+.right {
+  width: calc(100% - 240px);
+}
+.help {
+  border: none;
+  background: transparent;
+  outline: none;
+  position: relative;
+  padding: 0 0 0 22px;
+  min-height: 16px;
+}
+.help > span {
+  color: #999;
+  border-bottom: 1px dashed #c2c7cc;
+  font-style: italic;
+}
+.help:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 100%;
+  background: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2019.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20426.667%20426.667%22%20style%3D%22enable-background%3Anew%200%200%20426.667%20426.667%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22512px%22%20height%3D%22512px%22%3E%0A%3Cg%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20d%3D%22M213.333%2C0C95.467%2C0%2C0%2C95.467%2C0%2C213.333s95.467%2C213.333%2C213.333%2C213.333S426.667%2C331.2%2C426.667%2C213.333S331.2%2C0%2C213.333%2C0%20%20%20%20z%20M234.667%2C362.667H192V320h42.667V362.667z%20M278.72%2C197.44l-19.093%2C19.627c-15.36%2C15.36-24.96%2C28.267-24.96%2C60.267H192v-10.667%20%20%20%20c0-23.573%2C9.6-44.907%2C24.96-60.373l26.56-26.88c7.68-7.68%2C12.48-18.347%2C12.48-30.08c0-23.573-19.093-42.667-42.667-42.667%20%20%20%20s-42.667%2C19.093-42.667%2C42.667H128C128%2C102.187%2C166.187%2C64%2C213.333%2C64s85.333%2C38.187%2C85.333%2C85.333%20%20%20%20C298.667%2C168.107%2C291.093%2C185.067%2C278.72%2C197.44z%22%20fill%3D%22%23c2c7cc%22%2F%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A") no-repeat center;
+  background-size: 16px;
+}
+.help:hover {
+  cursor: pointer;
+}
+.help:hover > span {
+  border-bottom: 0;
+}
+.documents {
+  width: 100%;
+  border-collapse: collapse;
+}
+.documents th,
+.documents td {
+  padding: 10px 5px;
+}
+.documents th:first-child,
+.documents td:first-child {
+  width: 20%;
+}
+.documents th {
+  font-style: italic;
+  text-align: left;
+  font-weight: normal;
+}
+.documents td:first-child {
+  width: 34%;
+  padding-right: 10px;
+}
+.documents td:nth-child(2),
+.documents td:nth-child(3),
+.documents td:nth-child(4) {
+  width: 12%;
+}
+.documents td:last-child {
+  width: 30%;
+  text-align: right;
+}
+.documents td .button {
+  width: auto;
+  margin-bottom: 0;
+}
+.documents td .button:first-child {
+  margin-left: 0;
+}
+.documents td .button:last-child {
+  margin-right: 0;
+}
+.documents td a.button {
+  width: 160px;
+}
+.documents tr.warning td {
+  background-color: #ffdede;
+}
+.documents tr.warning td:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.documents tr.warning td:last-child {
+  border-radius: 0 4px 4px 0;
+}
+.documents tr.warning td:nth-child(4) {
+  color: #f25618;
+  font-weight: bold;
+}
+.doc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  color: #297acc;
+  transition: color .3s;
+  position: relative;
+  padding-left: 26px;
+  word-wrap: break-word;
+  min-height: 18px;
+}
+.doc:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 100%;
+  background: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2019.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Layer_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20299.998%20299.998%22%20style%3D%22enable-background%3Anew%200%200%20299.998%20299.998%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22512px%22%20height%3D%22512px%22%3E%0A%3Cg%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20d%3D%22M149.995%2C0C67.156%2C0%2C0%2C67.159%2C0%2C149.997c0%2C82.837%2C67.156%2C150%2C149.995%2C150s150.003-67.163%2C150.003-150%20%20%20%20C299.997%2C67.159%2C232.834%2C0%2C149.995%2C0z%20M110.967%2C105.357c2.075-2.075%2C4.793-3.112%2C7.511-3.112c2.718%2C0%2C5.434%2C1.037%2C7.508%2C3.112%20%20%20%20l13.297%2C13.295v-3.911V62.477c0-5.867%2C4.754-10.621%2C10.621-10.621s10.621%2C4.754%2C10.621%2C10.621v52.263v4.63l4.63-4.63l9.386-9.384%20%20%20%20c2.075-2.075%2C4.79-3.112%2C7.508-3.112s5.436%2C1.037%2C7.511%2C3.112c2.552%2C2.549%2C3.522%2C6.079%2C2.933%2C9.384%20%20%20%20c0%2C0.003-0.003%2C0.005-0.003%2C0.008c-0.044%2C0.239-0.119%2C0.469-0.179%2C0.703c-0.091%2C0.366-0.189%2C0.729-0.322%2C1.084%20%20%20%20c-0.088%2C0.239-0.189%2C0.472-0.296%2C0.705c-0.166%2C0.371-0.358%2C0.726-0.568%2C1.079c-0.112%2C0.187-0.215%2C0.373-0.34%2C0.552%20%20%20%20c-0.363%2C0.524-0.76%2C1.032-1.227%2C1.499l-15.115%2C15.115l-16.591%2C16.591c-2.077%2C2.075-4.793%2C3.105-7.508%2C3.105%20%20%20%20c-0.026%2C0-0.052%2C0-0.078%2C0s-0.054%2C0-0.078%2C0c-2.715%2C0-5.431-1.03-7.508-3.105l-16.591-16.591l-15.115-15.115%20%20%20%20c-0.467-0.467-0.864-0.973-1.222-1.496c-0.127-0.184-0.231-0.373-0.345-0.56c-0.207-0.35-0.397-0.703-0.563-1.069%20%20%20%20c-0.109-0.239-0.213-0.475-0.301-0.718c-0.127-0.348-0.223-0.7-0.314-1.056c-0.062-0.246-0.143-0.485-0.187-0.734%20%20%20%20C107.444%2C111.436%2C108.412%2C107.906%2C110.967%2C105.357z%20M231.574%2C209.315h-0.003c0%2C14.337-14.057%2C25.568-32.005%2C25.568h-99.132%20%20%20%20c-17.945%2C0-32.005-11.23-32.005-25.568V140.31c0-12.117%2C10.058-21.988%2C24.004-24.761c0.604%2C5.981%2C3.224%2C11.526%2C7.534%2C15.834%20%20%20%20l4.108%2C4.108h-3.641c-7.265%2C0-11.256%2C3.621-11.256%2C4.819v69.005c0%2C1.201%2C3.992%2C4.819%2C11.256%2C4.819h99.135%20%20%20%20c7.265%2C0%2C11.256-3.621%2C11.256-4.819V140.31c0-1.198-3.992-4.819-11.256-4.819h-3.12l4.111-4.111%20%20%20%20c4.282-4.279%2C6.894-9.786%2C7.516-15.727c13.681%2C2.913%2C23.498%2C12.69%2C23.498%2C24.66V209.315z%22%20fill%3D%22%23177ee6%22%2F%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A") no-repeat center;
+  background-size: 18px;
+  transition: background-image 0.3s;
+}
+.doc:hover {
+  color: #3299cc;
+}
+.doc:hover:before {
+  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2019.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Layer_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20299.998%20299.998%22%20style%3D%22enable-background%3Anew%200%200%20299.998%20299.998%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22512px%22%20height%3D%22512px%22%3E%0A%3Cg%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20d%3D%22M149.995%2C0C67.156%2C0%2C0%2C67.159%2C0%2C149.997c0%2C82.837%2C67.156%2C150%2C149.995%2C150s150.003-67.163%2C150.003-150%20%20%20%20C299.997%2C67.159%2C232.834%2C0%2C149.995%2C0z%20M110.967%2C105.357c2.075-2.075%2C4.793-3.112%2C7.511-3.112c2.718%2C0%2C5.434%2C1.037%2C7.508%2C3.112%20%20%20%20l13.297%2C13.295v-3.911V62.477c0-5.867%2C4.754-10.621%2C10.621-10.621s10.621%2C4.754%2C10.621%2C10.621v52.263v4.63l4.63-4.63l9.386-9.384%20%20%20%20c2.075-2.075%2C4.79-3.112%2C7.508-3.112s5.436%2C1.037%2C7.511%2C3.112c2.552%2C2.549%2C3.522%2C6.079%2C2.933%2C9.384%20%20%20%20c0%2C0.003-0.003%2C0.005-0.003%2C0.008c-0.044%2C0.239-0.119%2C0.469-0.179%2C0.703c-0.091%2C0.366-0.189%2C0.729-0.322%2C1.084%20%20%20%20c-0.088%2C0.239-0.189%2C0.472-0.296%2C0.705c-0.166%2C0.371-0.358%2C0.726-0.568%2C1.079c-0.112%2C0.187-0.215%2C0.373-0.34%2C0.552%20%20%20%20c-0.363%2C0.524-0.76%2C1.032-1.227%2C1.499l-15.115%2C15.115l-16.591%2C16.591c-2.077%2C2.075-4.793%2C3.105-7.508%2C3.105%20%20%20%20c-0.026%2C0-0.052%2C0-0.078%2C0s-0.054%2C0-0.078%2C0c-2.715%2C0-5.431-1.03-7.508-3.105l-16.591-16.591l-15.115-15.115%20%20%20%20c-0.467-0.467-0.864-0.973-1.222-1.496c-0.127-0.184-0.231-0.373-0.345-0.56c-0.207-0.35-0.397-0.703-0.563-1.069%20%20%20%20c-0.109-0.239-0.213-0.475-0.301-0.718c-0.127-0.348-0.223-0.7-0.314-1.056c-0.062-0.246-0.143-0.485-0.187-0.734%20%20%20%20C107.444%2C111.436%2C108.412%2C107.906%2C110.967%2C105.357z%20M231.574%2C209.315h-0.003c0%2C14.337-14.057%2C25.568-32.005%2C25.568h-99.132%20%20%20%20c-17.945%2C0-32.005-11.23-32.005-25.568V140.31c0-12.117%2C10.058-21.988%2C24.004-24.761c0.604%2C5.981%2C3.224%2C11.526%2C7.534%2C15.834%20%20%20%20l4.108%2C4.108h-3.641c-7.265%2C0-11.256%2C3.621-11.256%2C4.819v69.005c0%2C1.201%2C3.992%2C4.819%2C11.256%2C4.819h99.135%20%20%20%20c7.265%2C0%2C11.256-3.621%2C11.256-4.819V140.31c0-1.198-3.992-4.819-11.256-4.819h-3.12l4.111-4.111%20%20%20%20c4.282-4.279%2C6.894-9.786%2C7.516-15.727c13.681%2C2.913%2C23.498%2C12.69%2C23.498%2C24.66V209.315z%22%20fill%3D%22%233299cc%22%2F%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+}
+.jBox-wrapper {
+  z-index: 9001 !important;
+}
+.jBox-overlay {
+  z-index: 9000 !important;
+}
+.jBox-content .h1 {
+  text-align: center;
+  font-weight: bold;
+}
+.jBox-content .form-control {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.jBox-content .desc {
+  font-style: italic;
+}
+.jBox-content .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+.ui-front {
+  z-index: 9002;
+}
+.sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #b0b0b0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.sign-left {
+  width: 30px;
+  height: 30px;
+}
+.sign-right {
+  margin-left: 20px;
+}
+.sign__img {
+  width: 100%;
+}
+.sign__name {
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+.sign-line {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sign-line-left {
+  width: 120px;
+}
+.sign-line-right {
+  color: #999;
+  max-width: 400px;
+}
+.sign:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 /* -------------------------------------------------------------------------- */
 #footer-center {

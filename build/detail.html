@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Личный кабинет</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="js/vendor/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/vendor/datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="js/vendor/jquery-filestyle/jquery-filestyle.min.css">
+    <link rel="stylesheet" href="js/vendor/swiper/swiper.min.css">
+    <link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="js/vendor/jBox/jBox.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="wrapper">
+          <div class="header-left">
+            <div class="header__logo"></div>
+            <div class="header__desc">Югорская региональная<br>электросетевая компания</div>
+          </div>
+          <div class="header-middle">Горячая линия: <span>8 3467 <b>31 85 95</b></span></div>
+          <!--.header-right
+          .header__links
+            a(href="#") Авторизоваться
+            span.delimiter |
+            a(href="#") Зарегистрироваться
+            br
+            a(href="#") Вернуться на сайт
+          -->
+          <div class="header-right">Здравствуйте, Константин
+            <div class="header__links"><a href="#">Вернуться на сайт</a><span class="delimiter">|</span><a href="#">Выйти из аккаунта</a></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="wrapper">
+          <h1 class="h1">Заявление № 28 от 13.11.2017 13:39</h1>
+        </div>
+        <div class="tabs">
+          <div class="wrapper">
+            <button class="tabs__item js-tab" type="button" data-target="#detail">Детальная информация</button>
+            <button class="tabs__item js-tab" type="button" data-target="#discussion">Обсуждение</button>
+            <button class="tabs__item active warn js-tab" type="button" data-target="#documents">Документы<span class="number">1</span></button>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="display-none js-target" id="detail">
+            <div class="flex navigate"><a class="button gray" href="#"><i class="icon back"></i>Назад к списку</a>
+              <button class="button gray" type="button"><i class="icon status"></i>Изменить статус</button>
+              <button class="button gray" type="button"><i class="icon edit"></i>Редактировать</button>
+            </div>
+            <div class="bloc">
+              <h2 class="h2">Статус заявки</h2>
+              <div class="list">
+                <div class="left">Статус</div>
+                <div class="right">Заявка подана</div>
+              </div>
+              <div class="list">
+                <div class="left">Пояснение к статусу</div>
+                <div class="right">Заявка подана</div>
+              </div>
+              <div class="list">
+                <div class="left">Максимальная мощность энергопринимающих устройств заявителя</div>
+                <div class="right">154</div>
+              </div>
+              <div class="list">
+                <div class="left">Напряжение</div>
+                <div class="right">10 кВ</div>
+              </div>
+            </div>
+            <div class="bloc">
+              <h2 class="h2">Паспортные данные</h2>
+              <div class="list">
+                <div class="left">Фамилия</div>
+                <div class="right">Физ</div>
+              </div>
+              <div class="list">
+                <div class="left">Имя</div>
+                <div class="right">Физ</div>
+              </div>
+              <div class="list">
+                <div class="left">Отчество</div>
+                <div class="right">Лицо</div>
+              </div>
+              <div class="list">
+                <div class="left">Телефон для связи</div>
+                <div class="right">123</div>
+              </div>
+              <div class="list">
+                <div class="left">Электронная почта</div>
+                <div class="right">fiz@lico.ru</div>
+              </div>
+              <div class="list">
+                <div class="left">Регион</div>
+                <div class="right">Тюменская обл.</div>
+              </div>
+            </div>
+            <div class="display-none" id="more">
+              <div class="bloc">
+                <h2 class="h2">Статус заявки 2</h2>
+                <div class="list">
+                  <div class="left">Статус</div>
+                  <div class="right">Заявка подана</div>
+                </div>
+                <div class="list">
+                  <div class="left">Пояснение к статусу</div>
+                  <div class="right">Заявка подана</div>
+                </div>
+                <div class="list">
+                  <div class="left">Максимальная мощность энергопринимающих устройств заявителя</div>
+                  <div class="right">154</div>
+                </div>
+                <div class="list">
+                  <div class="left">Напряжение</div>
+                  <div class="right">10 кВ</div>
+                </div>
+              </div>
+              <div class="bloc">
+                <h2 class="h2">Паспортные данные 2</h2>
+                <div class="list">
+                  <div class="left">Фамилия</div>
+                  <div class="right">Физ</div>
+                </div>
+                <div class="list">
+                  <div class="left">Имя</div>
+                  <div class="right">Физ</div>
+                </div>
+                <div class="list">
+                  <div class="left">Отчество</div>
+                  <div class="right">Лицо</div>
+                </div>
+                <div class="list">
+                  <div class="left">Телефон для связи</div>
+                  <div class="right">123</div>
+                </div>
+                <div class="list">
+                  <div class="left">Электронная почта</div>
+                  <div class="right">fiz@lico.ru</div>
+                </div>
+                <div class="list">
+                  <div class="left">Регион</div>
+                  <div class="right">Тюменская обл.</div>
+                </div>
+              </div>
+            </div>
+            <div class="bloc">
+              <button class="button gray full js-more" type="button" data-target="#more" data-text="Свернуть">Показать подробнее</button>
+            </div>
+            <div class="block">
+              <div class="form-control">
+                <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+                <input class="form__input js-file" type="file" id="file-1" multiple>
+                <label class="form__label" for="file-1">File Default</label>
+                <button class="help" type="button"><span>Размер файла не более 10 МБ</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="display-none js-target" id="discussion"></div>
+          <div class="display-none js-target show" id="documents">
+            <div class="navigate"><a class="button gray" href="#"><i class="icon back"></i>Назад к списку</a></div>
+            <table class="documents">
+              <tbody>
+                <tr>
+                  <th>Наименование документа</th>
+                  <th>Дата поступления документа</th>
+                  <th>Дата подписания пользователем</th>
+                  <th>Состояние</th>
+                  <th></th>
+                </tr>
+                <tr class="warning">
+                  <td><a class="doc" href="#">Акт выполнения технологического присоединения.doc</a></td>
+                  <td>15.11.2017</td>
+                  <td>—</td>
+                  <td>Не подписан</td>
+                  <td>
+                    <button class="button green js-popup" type="button" data-target="#form">Подписать</button>
+                    <button class="button js-popup" type="button" data-target="#list">Список подписей</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a class="doc" href="#">Договор на энергоснабжение.pdf</a></td>
+                  <td>10.11.2017</td>
+                  <td>17.11.2017</td>
+                  <td>Подписан</td>
+                  <td>
+                    <button class="button js-popup" type="button" data-target="#list">Список подписей</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a class="doc" href="#">Акт выполнения технических условий.pdf</a></td>
+                  <td>01.09.2017</td>
+                  <td>15.09.2017</td>
+                  <td>Подписан</td>
+                  <td>
+                    <button class="button js-popup" type="button" data-target="#list">Список подписей</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a class="doc" href="#">Договор на техприсоединение.pdf</a></td>
+                  <td>24.07.2017</td>
+                  <td>02.08.2017</td>
+                  <td>Подписан</td>
+                  <td>
+                    <button class="button js-popup" type="button" data-target="#list">Список подписей</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="display-none" id="form">
+              <form class="form" action="#">
+                <h1 class="h1">Подписание документа</h1>
+                <p>
+                  Вы хотите подписать документ: "Акт выполнения технологического присоединения.doc"<br>
+                  Для того, чтобы осуществить подписание, выберите сертификат из списка загруженных.
+                </p>
+                <p class="desc">Для загрузки новых сертификатов перейдите в раздел <a href="#">ЭЦП</a></p>
+                <div class="form-control">
+                  <select class="form__select" id="select-1">
+                    <option value="1">Москва</option>
+                    <option value="2">Санкт-Петербург</option>
+                    <option value="3">Екатеринбург</option>
+                    <option value="4">Омск</option>
+                  </select>
+                  <label class="form__label" for="select-1">Загруженные сертификаты</label>
+                </div>
+                <div class="flex">
+                  <button class="button" type="button" data-close>Отмена</button>
+                  <button class="button green" type="submit">Подписать</button>
+                </div>
+              </form>
+            </div>
+            <div class="display-none" id="list">
+              <h1 class="h1">Электронные подписи</h1>
+              <div class="sign">
+                <div class="sign-left"><img class="sign__img" src="images/medal.svg"></div>
+                <div class="sign-right">
+                  <div class="sign__name">Зотов Александр Владимирович</div>
+                  <div class="sign-line">
+                    <div class="sign-line-left">Организация:</div>
+                    <div class="sign-line-right">ООО «АРХСТРОЙПРОЕКТ»</div>
+                  </div>
+                  <div class="sign-line">
+                    <div class="sign-line-left">Дата создания:</div>
+                    <div class="sign-line-right">10.10.2017 11:55:45</div>
+                  </div>
+                </div>
+              </div>
+              <div class="sign">
+                <div class="sign-left"><img class="sign__img" src="images/medal.svg"></div>
+                <div class="sign-right">
+                  <div class="sign__name">Фамилия Имя Отчество</div>
+                  <div class="sign-line">
+                    <div class="sign-line-left">Организация:</div>
+                    <div class="sign-line-right">АО «Югорская региональная электросетевая компания»</div>
+                  </div>
+                  <div class="sign-line">
+                    <div class="sign-line-left">Дата создания:</div>
+                    <div class="sign-line-right">15.01.2016 10:42:13</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer id="footer">
+        <div id="footer-center">
+          <div class="footer-center-inner">
+            <div class="swiper-container slider__body js-slider">
+              <div class="swiper-wrapper"><a class="swiper-slide slider__i" href="http://www.admhmao.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-1.jpg">
+                    <div class="slider__i-h">Официальный портал органов государственной власти</div></span></a><a class="swiper-slide slider__i" href="http://www.yutec-hm.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-2.jpg">
+                    <div class="slider__i-h">Югорская территориальная энергетическая компания</div></span></a><a class="swiper-slide slider__i" href="http://minenergo.gov.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-3.jpg">
+                    <div class="slider__i-h">Министерство энергетики Российской федерации</div></span></a><a class="swiper-slide slider__i" href="http://www.fas.gov.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-4.jpg">
+                    <div class="slider__i-h">Федеральная антимонопольная служба</div></span></a><a class="swiper-slide slider__i" href="http://hmao.fas.gov.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-5.jpg">
+                    <div class="slider__i-h">Управление ФАС по ХМАО</div></span></a><a class="swiper-slide slider__i" href="http://www.rectmn.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-6.jpg">
+                    <div class="slider__i-h">Региональная энергетическая комиссия</div></span></a><a class="swiper-slide slider__i" href="http://www.rael.elektra.ru/" target="_blank"><span class="slider__i-img-wrap"><img src="images/footer-7.png">
+                    <div class="slider__i-h">Объединение работодателей электроэнергетики</div></span></a>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <table class="footer-actions">
+            <tr>
+              <td class="footer-actions-copy">
+                <div>© 2012 АО «Югорская региональная электросетевая компания». Все права защищены.</div><img src="images/counter.png" width="88" height="31">
+              </td>
+              <td class="footer-actions-mail"><a href="mailto:office@yuresk.ru">office@yuresk.ru</a>
+                <ul class="footer-icons-list">
+                  <li><a href="/"><img src="images/home.gif" alt="на главную" title="на главную"></a></li>
+                  <li><a href="/feedback/"><img src="images/mail.gif" alt="напишите нам" title="напишите нам"></a></li>
+                  <li><a href="/sitemap/"><img src="images/map.gif" alt="карта сайта" title="карта сайта"></a></li>
+                </ul>
+              </td>
+              <td class="footer-actions-icons">
+                <form action="/search/" method="post">
+                  <table class="search-form">
+                    <tr>
+                      <td>
+                        <div class="placeholder search-form-placeholder">
+                          <label class="input-hint" for="search-form-text">Поиск по сайту</label>
+                          <input class="input-text" type="text" id="search-form-text" name="q">
+                        </div>
+                      </td>
+                      <td>
+                        <input class="search-form-submit" type="submit" id="input-name" value="">
+                      </td>
+                    </tr>
+                  </table>
+                </form>
+              </td>
+              <td class="footer-actions-search">
+                Техническая поддержка – <br> <a href="http://ugraweb.ru" target="_blank">Югорские интернет решения</a></td>
+            </tr>
+          </table>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/vendor/datepicker/datepicker.min.js"></script>
+    <script src="js/vendor/jquery-filestyle/jquery-filestyle.min.js"></script>
+    <script src="js/vendor/swiper/swiper.min.js"></script>
+    <script src="js/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/vendor/jBox/jBox.min.js"></script>
+    <script src="js/app/main.js"></script>
+  </body>
+</html>

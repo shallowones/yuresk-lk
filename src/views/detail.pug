@@ -1,0 +1,218 @@
+extends layout
+
+block content
+
+  .page
+
+    include includes/header
+
+    main.main
+
+      .wrapper
+        h1.h1 Заявление № 28 от 13.11.2017 13:39
+
+      .tabs
+        .wrapper
+          button(type="button", data-target="#detail").tabs__item.js-tab Детальная информация
+          button(type="button", data-target="#discussion").tabs__item.js-tab Обсуждение
+          button(type="button", data-target="#documents").tabs__item.active.warn.js-tab Документы
+            span.number 1
+
+      .wrapper
+
+        #detail.display-none.js-target
+
+          .flex.navigate
+            a(href="#").button.gray
+              i.icon.back
+              | Назад к списку
+            button(type="button").button.gray
+              i.icon.status
+              | Изменить статус
+            button(type="button").button.gray
+              i.icon.edit
+              | Редактировать
+
+          .bloc
+            h2.h2 Статус заявки
+            .list
+              .left Статус
+              .right Заявка подана
+            .list
+              .left Пояснение к статусу
+              .right Заявка подана
+            .list
+              .left Максимальная мощность энергопринимающих устройств заявителя
+              .right 154
+            .list
+              .left Напряжение
+              .right 10 кВ
+
+          .bloc
+            h2.h2 Паспортные данные
+            .list
+              .left Фамилия
+              .right Физ
+            .list
+              .left Имя
+              .right Физ
+            .list
+              .left Отчество
+              .right Лицо
+            .list
+              .left Телефон для связи
+              .right 123
+            .list
+              .left Электронная почта
+              .right fiz@lico.ru
+            .list
+              .left Регион
+              .right Тюменская обл.
+
+          #more.display-none
+            .bloc
+              h2.h2 Статус заявки 2
+              .list
+                .left Статус
+                .right Заявка подана
+              .list
+                .left Пояснение к статусу
+                .right Заявка подана
+              .list
+                .left Максимальная мощность энергопринимающих устройств заявителя
+                .right 154
+              .list
+                .left Напряжение
+                .right 10 кВ
+
+            .bloc
+              h2.h2 Паспортные данные 2
+              .list
+                .left Фамилия
+                .right Физ
+              .list
+                .left Имя
+                .right Физ
+              .list
+                .left Отчество
+                .right Лицо
+              .list
+                .left Телефон для связи
+                .right 123
+              .list
+                .left Электронная почта
+                .right fiz@lico.ru
+              .list
+                .left Регион
+                .right Тюменская обл.
+
+          .bloc
+            button(type="button", data-target="#more", data-text="Свернуть").button.gray.full.js-more Показать подробнее
+
+
+          .block
+            .form-control
+              input(type="hidden", name="MAX_FILE_SIZE", value="10485760")
+              input(type="file", id="file-1", multiple).form__input.js-file
+              label(for="file-1").form__label File Default
+              button(type="button").help
+                span Размер файла не более 10 МБ
+
+
+        #discussion.display-none.js-target
+
+        #documents.display-none.js-target.show
+          .navigate
+            a(href="#").button.gray
+              i.icon.back
+              | Назад к списку
+
+          table.documents
+            tbody
+              tr
+                th Наименование документа
+                th Дата поступления документа
+                th Дата подписания пользователем
+                th Состояние
+                th
+              tr.warning
+                td
+                  a(href="#").doc Акт выполнения технологического присоединения.doc
+                td 15.11.2017
+                td —
+                td Не подписан
+                td
+                  button(type="button", data-target="#form").button.green.js-popup Подписать
+                  button(type="button", data-target="#list").button.js-popup Список подписей
+              tr
+                td
+                  a(href="#").doc Договор на энергоснабжение.pdf
+                td 10.11.2017
+                td 17.11.2017
+                td Подписан
+                td
+                  button(type="button", data-target="#list").button.js-popup Список подписей
+              tr
+                td
+                  a(href="#").doc Акт выполнения технических условий.pdf
+                td 01.09.2017
+                td 15.09.2017
+                td Подписан
+                td
+                  button(type="button", data-target="#list").button.js-popup Список подписей
+              tr
+                td
+                  a(href="#").doc Договор на техприсоединение.pdf
+                td 24.07.2017
+                td 02.08.2017
+                td Подписан
+                td
+                  button(type="button", data-target="#list").button.js-popup Список подписей
+
+          #form.display-none
+            form(action="#").form
+              h1.h1 Подписание документа
+              p.
+                Вы хотите подписать документ: "Акт выполнения технологического присоединения.doc"<br>
+                Для того, чтобы осуществить подписание, выберите сертификат из списка загруженных.
+              p.desc Для загрузки новых сертификатов перейдите в раздел <a href="#">ЭЦП</a>
+              .form-control
+                select(id="select-1").form__select
+                  option(value="1") Москва
+                  option(value="2") Санкт-Петербург
+                  option(value="3") Екатеринбург
+                  option(value="4") Омск
+                label(for="select-1").form__label Загруженные сертификаты
+              .flex
+                button(type="button", data-close).button Отмена
+                button(type="submit").button.green Подписать
+
+          #list.display-none
+            h1.h1 Электронные подписи
+            .sign
+              .sign-left
+                img(src="images/medal.svg").sign__img
+              .sign-right
+                .sign__name Зотов Александр Владимирович
+                .sign-line
+                  .sign-line-left Организация:
+                  .sign-line-right ООО «АРХСТРОЙПРОЕКТ»
+                .sign-line
+                  .sign-line-left Дата создания:
+                  .sign-line-right 10.10.2017 11:55:45
+            .sign
+              .sign-left
+                img(src="images/medal.svg").sign__img
+              .sign-right
+                .sign__name Фамилия Имя Отчество
+                .sign-line
+                  .sign-line-left Организация:
+                  .sign-line-right АО «Югорская региональная электросетевая компания»
+                .sign-line
+                  .sign-line-left Дата создания:
+                  .sign-line-right 15.01.2016 10:42:13
+
+
+    include includes/footer
+
+

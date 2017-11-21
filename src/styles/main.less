@@ -176,6 +176,57 @@ a {
       background-color: #3399ff;
     }
   }
+
+  &.gray {
+    background-color: #f2f2f2;
+    box-shadow: none;
+    margin: 0 0 10px;
+    width: 220px;
+    color: #333;
+    transition: background-color .3s;
+
+    & > .icon {
+      margin-left: 0;
+    }
+
+    &.full {
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: #e1e3e6;
+    }
+  }
+
+  &.green {
+    background-color: #49c54d;
+
+    &:hover {
+      background-color: #5fce31;
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 8px;
+  width: 16px;
+  height: 16px;
+  background: no-repeat center;
+  background-size: 100%;
+
+  &.back {
+    background-image: data-uri('../images/svg/back.svg');
+  }
+
+  &.status {
+    background-image: data-uri('../images/svg/status.svg');
+  }
+
+  &.edit {
+    background-image: data-uri('../images/svg/edit.svg');
+  }
 }
 
 .block {
@@ -1312,11 +1363,23 @@ p {
       margin-left: 0;
     }
 
+    &.warn {
+      color: #f25618;
+
+      & .number {
+        background-color: #f25618;
+      }
+    }
+
     &.active {
       color: #ff7f00;
 
       &:after {
         opacity: 1;
+      }
+
+      & .number {
+        background-color: #ff7f00;
       }
     }
 
@@ -1324,6 +1387,18 @@ p {
       cursor: pointer;
     }
   }
+}
+
+.number {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px;
+  color: #fff;
+  background-color: #999;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
 }
 
 .nowrap {
@@ -1608,6 +1683,264 @@ a.sidebar__item {
 
 .date {
   color: #999;
+}
+
+.navigate {
+  margin: 24px 0;
+}
+
+.bloc {
+  margin-bottom: 40px;
+
+  & > .h2 {
+    margin-bottom: 20px;
+  }
+
+  & > .list:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.list {
+  margin-bottom: 20px;
+  display: flex;
+  line-height: 18px;
+}
+
+.left {
+  width: 240px;
+  color: #999;
+}
+
+.right {
+  width: ~"calc(100% - 240px)";
+}
+
+.help {
+  border: none;
+  background: transparent;
+  outline: none;
+  position: relative;
+  padding: 0 0 0 22px;
+  min-height: 16px;
+
+  & > span {
+    color: #999;
+    border-bottom: 1px dashed #c2c7cc;
+    font-style: italic;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 100%;
+    background: data-uri('../images/svg/help.svg') no-repeat center;
+    background-size: 16px;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    & > span {
+      border-bottom: 0;
+    }
+  }
+}
+
+.documents {
+  width: 100%;
+  border-collapse: collapse;
+
+  & th, & td {
+    padding: 10px 5px;
+
+    &:first-child {
+      width: 20%;
+    }
+  }
+
+  & th {
+    font-style: italic;
+    text-align: left;
+    font-weight: normal;
+  }
+
+  & td {
+
+    &:first-child {
+      width: 34%;
+      padding-right: 10px;
+    }
+
+    &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+      width: 12%;
+    }
+
+    &:last-child {
+      width: 30%;
+      text-align: right;
+    }
+
+    & .button {
+      width: auto;
+      margin-bottom: 0;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    & a.button {
+      width: 160px;
+    }
+  }
+
+  & tr {
+
+    &.warning {
+
+      & td {
+        background-color: #ffdede;
+
+        &:first-child {
+          border-radius: 4px 0 0 4px;
+        }
+
+        &:last-child {
+          border-radius: 0 4px 4px 0;
+        }
+
+        &:nth-child(4) {
+          color: #f25618;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.doc {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #297acc;
+  transition: color .3s;
+  position: relative;
+  padding-left: 26px;
+  word-wrap: break-word;
+  min-height: 18px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 100%;
+    background: data-uri('../images/svg/download.svg') no-repeat center;
+    background-size: 18px;
+    transition: background-image .3s;
+  }
+
+  &:hover {
+    color: #3299cc;
+
+    &:before {
+      background-image: data-uri('../images/svg/download-active.svg');
+    }
+  }
+}
+
+.jBox {
+
+  &-wrapper {
+    z-index: 9001 !important;
+  }
+
+  &-overlay {
+    z-index: 9000 !important;
+  }
+
+  &-content {
+
+    & .h1 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    & .form-control {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    & .desc {
+      font-style: italic;
+    }
+
+    & .flex {
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+  }
+}
+
+.ui-front {
+  z-index: 9002;
+}
+
+.sign {
+  display: flex;
+  border-bottom: 1px solid #b0b0b0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  &-left {
+    width: 30px;
+    height: 30px;
+  }
+
+  &-right {
+    margin-left: 20px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-weight: bold;
+  }
+
+  &-line {
+    margin-bottom: 10px;
+    display: flex;
+
+    &-left {
+      width: 120px;
+    }
+
+    &-right {
+      color: #999;
+      max-width: 400px;
+    }
+  }
+
+  &:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 /* -------------------------------------------------------------------------- */

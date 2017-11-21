@@ -1,5 +1,7 @@
-(function ($) {
+(function ($, jBox) {
   $(function () {
+
+    const is = ((el) => { return typeof el !== 'undefined' && el.length })
 
     // работа с инпутами (убираем класс err при вводе чего-нибудь)
     {
@@ -93,6 +95,7 @@
       })
     }
 
+    // инициализация слайдера
     {
      $('.js-slider').swiper({
        nextButton: '.swiper-button-next',
@@ -102,5 +105,69 @@
      })
     }
 
+    // событие на кнопку "Показать подробнее"
+    {
+      const activeClass = 'active'
+      $('.js-more').on('click', (e) => {
+        e.preventDefault()
+        const self = e.currentTarget
+        const $this = $(self)
+        const oldText = self.innerText
+        const newText = self.dataset.text
+        const $target = $(self.dataset.target)
+        const animate = ((bool) => {
+          $this.animate({ opacity: 0 }, 400, () => {
+            $this
+              .text(newText)
+              .attr('data-text', oldText)
+              .animate({ opacity: 1 }, 400)
+            if (bool) {
+              $this.removeClass(activeClass)
+            } else {
+              $this.addClass(activeClass)
+            }
+          })
+        })
+        const hasActiveClass = $this.hasClass(activeClass)
+        $target.slideToggle(hasActiveClass)
+        animate(hasActiveClass)
+      })
+    }
+
+    // попап
+    {
+      new jBox('Modal', {
+        attach: '.js-popup',
+        onOpen: function () {
+          const $source = this.source
+          const $content = this.content
+          const $hidden = $($source.data('target'))
+          const html = $hidden.html()
+          
+          if (is(html)) {
+            $hidden.html('')
+            this.setContent(html)
+            $content
+              .find('button[data-close]').on('click', (e) => {
+                e.preventDefault()
+                this.close()
+              })
+            $content.find('select').selectmenu()
+          } else {
+            this.close()
+          }
+        },
+        onCloseComplete: function () {
+          const $source = this.source
+          const $content = this.content
+          const $hidden = $($source.data('target'))
+          $content.find('select').selectmenu('destroy')
+          const html = $content.html()
+          $content.html('')
+          $hidden.append(html)
+        }
+      })
+    }
+
   })
-})(jQuery)
+})(jQuery, jBox)
