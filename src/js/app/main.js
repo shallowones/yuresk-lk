@@ -162,7 +162,7 @@
             this.close()
           }
           window.storage.jBoxActiveModal = this.wrapper
-          this.wrapper.trigger(window.jBoxOpenEvent)
+          $(document).trigger(window.storage.jBoxOpenEvent)
         },
         onCloseComplete: function () {
           const $source = this.source
@@ -173,7 +173,7 @@
           $content.html('')
           $hidden.append(html)
           window.storage.jBoxActiveModal = this.wrapper
-          this.wrapper.trigger(window.storage.jBoxCloseComplete)
+          $(document).trigger(window.storage.jBoxCloseComplete)
         }
       })
     }
