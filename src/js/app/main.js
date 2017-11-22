@@ -1,4 +1,9 @@
 (function ($, jBox) {
+
+  window.storage = {}
+  window.storage.jBoxOpenEvent = 'jBoxOpenEvent'
+  window.storage.jBoxCloseComplete = 'jBoxCloseComplete'
+
   $(function () {
 
     const is = ((el) => { return typeof el !== 'undefined' && el.length })
@@ -136,9 +141,6 @@
 
     // попап
     {
-      window.jBoxOpenEvent = 'jBoxOpenEvent'
-      window.jBoxCloseComplete = 'jBoxCloseComplete'
-
       new jBox('Modal', {
         attach: '.js-popup',
         onOpen: function () {
@@ -159,7 +161,7 @@
           } else {
             this.close()
           }
-          window.jBoxActiveModal = this.wrapper
+          window.storage.jBoxActiveModal = this.wrapper
           this.wrapper.trigger(window.jBoxOpenEvent)
         },
         onCloseComplete: function () {
@@ -170,8 +172,8 @@
           const html = $content.html()
           $content.html('')
           $hidden.append(html)
-          window.jBoxActiveModal = this.wrapper
-          this.wrapper.trigger(window.jBoxCloseComplete)
+          window.storage.jBoxActiveModal = this.wrapper
+          this.wrapper.trigger(window.storage.jBoxCloseComplete)
         }
       })
     }
