@@ -136,6 +136,9 @@
 
     // попап
     {
+      window.jBoxOpenEvent = 'jBoxOpenEvent'
+      window.jBoxCloseComplete = 'jBoxCloseComplete'
+
       new jBox('Modal', {
         attach: '.js-popup',
         onOpen: function () {
@@ -143,7 +146,7 @@
           const $content = this.content
           const $hidden = $($source.data('target'))
           const html = $hidden.html()
-          
+
           if (is(html)) {
             $hidden.html('')
             this.setContent(html)
@@ -156,6 +159,8 @@
           } else {
             this.close()
           }
+          window.jBoxActiveModal = this.wrapper
+          this.wrapper.trigger(window.jBoxOpenEvent)
         },
         onCloseComplete: function () {
           const $source = this.source
@@ -165,6 +170,8 @@
           const html = $content.html()
           $content.html('')
           $hidden.append(html)
+          window.jBoxActiveModal = this.wrapper
+          this.wrapper.trigger(window.jBoxCloseComplete)
         }
       })
     }
