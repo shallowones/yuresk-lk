@@ -557,7 +557,11 @@ a {
     }
 
     &[type="checkbox"] {
-      display: none;
+      opacity: 0;
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      top: 0;
 
       & + .form__label {
         position: relative;
@@ -1941,6 +1945,10 @@ a.sidebar__item {
     margin-bottom: 0;
     padding-bottom: 0;
   }
+}
+
+.red {
+  color: #f25618;
 }
 
 /* -------------------------------------------------------------------------- */

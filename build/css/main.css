@@ -907,7 +907,11 @@ a {
   cursor: default;
 }
 .form__input[type="checkbox"] {
-  display: none;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .form__input[type="checkbox"] + .form__label {
   position: relative;
@@ -2099,6 +2103,9 @@ a.sidebar__item:hover {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+.red {
+  color: #f25618;
 }
 /* -------------------------------------------------------------------------- */
 #footer-center {
